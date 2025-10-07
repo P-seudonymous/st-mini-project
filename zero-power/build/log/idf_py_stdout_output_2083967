@@ -1,0 +1,473 @@
+Command: /home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python /home/pseudonymous/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/pseudonymous/st-mini-project/zero-power/build/zero-power.elf /home/pseudonymous/st-mini-project/zero-power/build/bootloader/bootloader.elf -m '/home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python' '/home/pseudonymous/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15920
+ho 0 tail 12 room 4
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  7 2025 23:41:17[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae94h ( 44692) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001aebc vaddr=3ffb0000 size=02604h (  9732) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001d4c8 vaddr=40080000 size=02b50h ( 11088) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=12efch ( 77564) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=00032f24 vaddr=40082b50 size=0a444h ( 42052) load[0m
+[0;32mI (161) esp_image: segment 5: paddr=0003d370 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (169) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (169) boot: Disabling RNG early entropy source...[0m
+[0;32mI (180) cpu_start: Multicore app[0m
+[0;32mI (188) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (188) cpu_start: Pro cpu start user code[0m
+[0;32mI (188) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (190) app_init: Application information:[0m
+[0;32mI (194) app_init: Project name:     zero-power[0m
+[0;32mI (198) app_init: App version:      52a47f5-dirty[0m
+[0;32mI (202) app_init: Compile time:     Oct  7 2025 23:41:09[0m
+[0;32mI (207) app_init: ELF file SHA256:  47d5b2406...[0m
+[0;32mI (212) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2EF0 len 0002D110 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008CF94 len 0001306C (76 KiB): IRAM[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (265) spi_flash: flash io: dio[0m
+[0;33mW (268) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (281) main_task: Started on CPU0[0m
+[0;32mI (291) main_task: Calling app_main()[0m
+[0;32mI (291) FIRE_ALARM: [0m
+[0;32mI (291) FIRE_ALARM: ╔═══════════════════════════════════════════════╗[0m
+[0;32mI (301) FIRE_ALARM: ║      SMART FIRE & SMOKE DETECTION SYSTEM      ║[0m
+[0;32mI (301) FIRE_ALARM: ║      ESP32-WROOM + MQ135 + Active Buzzer      ║[0m
+[0;32mI (311) FIRE_ALARM: ╚═══════════════════════════════════════════════╝[0m
+[0;32mI (331) FIRE_ALARM: [0m
+[0;32mI (331) MQ135: ✓ ADC calibration: Line Fitting Scheme[0m
+[0;32mI (331) MQ135: ✓ MQ135 Smoke Detector initialized on GPIO34[0m
+[0;32mI (341) BUZZER: Active buzzer initialized on GPIO23[0m
+[0;32mI (341) FIRE_ALARM: System initializing...[0m
+[0;32mI (651) FIRE_ALARM: [0m
+[0;32mI (651) FIRE_ALARM: Warming up MQ135 smoke sensor...[0m
+[0;32mI (651) FIRE_ALARM:   Please wait 60 seconds for sensor stabilization[0m
+[0;32mI (651) FIRE_ALARM:    (First time use requires 24-48 hours preheat)[0m
+[0;32mI (651) FIRE_ALARM: [0m
+[0;32mI (651) FIRE_ALARM:    Countdown: 60 seconds...[0m
+[0;32mI (10661) FIRE_ALARM:    Countdown: 50 seconds...[0m
+[0;32mI (20661) FIRE_ALARM:    Countdown: 40 seconds...[0m
+[0;32mI (30661) FIRE_ALARM:    Countdown: 30 seconds...[0m
+[0;32mI (40661) FIRE_ALARM:    Countdown: 20 seconds...[0m
+[0;32mI (50661) FIRE_ALARM:    Countdown: 10 seconds...[0m
+[0;32mI (55661) FIRE_ALARM:    Countdown: 5 seconds...[0m
+[0;32mI (56661) FIRE_ALARM:    Countdown: 4 seconds...[0m
+[0;32mI (57661) FIRE_ALARM:    Countdown: 3 seconds...[0m
+[0;32mI (58661) FIRE_ALARM:    Countdown: 2 seconds...[0m
+[0;32mI (59661) FIRE_ALARM:    Countdown: 1 seconds...[0m
+[0;32mI (60661) FIRE_ALARM: [0m
+[0;32mI (60661) FIRE_ALARM:   System ready! Fire detection active![0m
+[0;32mI (60661) FIRE_ALARM: [0m
+[0;32mI (61211) FIRE_ALARM: ╔════════════════════════════════════════════╗[0m
+[0;32mI (61211) FIRE_ALARM: ║          MONITORING STARTED...             ║[0m
+[0;32mI (61211) FIRE_ALARM: ╚════════════════════════════════════════════╝[0m
+[0;32mI (61231) FIRE_ALARM: [0m
+[0;32mI (61251) FIRE_ALARM: [0m
+[0;32mI (61251) FIRE_ALARM: ━━━━━━━━━━━ Reading #1 ━━━━━━━━━━━[0m
+[0;32mI (61251) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (61251) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (61251) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (61261) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (61261) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (61271) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (61281) FIRE_ALARM: [0m
+[0;32mI (64291) FIRE_ALARM: [0m
+[0;32mI (64291) FIRE_ALARM: ━━━━━━━━━━━ Reading #2 ━━━━━━━━━━━[0m
+[0;32mI (64291) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (64291) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (64301) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (64301) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (64311) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (64311) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (64321) FIRE_ALARM: [0m
+[0;32mI (67331) FIRE_ALARM: [0m
+[0;32mI (67331) FIRE_ALARM: ━━━━━━━━━━━ Reading #3 ━━━━━━━━━━━[0m
+[0;32mI (67331) FIRE_ALARM:    Raw ADC       : 478[0m
+[0;32mI (67331) FIRE_ALARM:    Voltage       : 0.54 V[0m
+[0;32mI (67341) FIRE_ALARM:    Concentration : 2904 PPM[0m
+[0;32mI (67341) FIRE_ALARM:    Status        : FIRE ALERT[0m
+[1;31mE (67351) FIRE_ALARM:    FIRE ALERT! [0m
+[1;31mE (67351) FIRE_ALARM:   → EVACUATE NOW![0m
+[1;31mE (67351) FIRE_ALARM:   → CALL EMERGENCY SERVICES![0m
+[0;32mI (67361) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (67371) FIRE_ALARM: [0m
+[0;33mW (67371) FIRE_ALARM:  ACTIVATING ALARM SYSTEM![0m
+[1;31mE (67381) BUZZER: FIRE ALARM ACTIVATED![0m
+[0;32mI (72391) FIRE_ALARM: [0m
+[0;32mI (72391) FIRE_ALARM: ━━━━━━━━━━━ Reading #4 ━━━━━━━━━━━[0m
+[0;32mI (72391) FIRE_ALARM:    Raw ADC       : 66[0m
+[0;32mI (72391) FIRE_ALARM:    Voltage       : 0.20 V[0m
+[0;32mI (72401) FIRE_ALARM:    Concentration : 35 PPM[0m
+[0;32mI (72401) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (72411) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (72411) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (72421) FIRE_ALARM: [0m
+[0;32mI (72421) FIRE_ALARM:  Air cleared - Alarm deactivated[0m
+[0;32mI (75941) FIRE_ALARM: [0m
+[0;32mI (75941) FIRE_ALARM: ━━━━━━━━━━━ Reading #5 ━━━━━━━━━━━[0m
+[0;32mI (75941) FIRE_ALARM:    Raw ADC       : 29[0m
+[0;32mI (75941) FIRE_ALARM:    Voltage       : 0.17 V[0m
+[0;32mI (75951) FIRE_ALARM:    Concentration : 17 PPM[0m
+[0;32mI (75951) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (75961) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (75961) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (75971) FIRE_ALARM: [0m
+[0;32mI (78981) FIRE_ALARM: [0m
+[0;32mI (78981) FIRE_ALARM: ━━━━━━━━━━━ Reading #6 ━━━━━━━━━━━[0m
+[0;32mI (78981) FIRE_ALARM:    Raw ADC       : 574[0m
+[0;32mI (78981) FIRE_ALARM:    Voltage       : 0.62 V[0m
+[0;32mI (78991) FIRE_ALARM:    Concentration : 5500 PPM[0m
+[0;32mI (78991) FIRE_ALARM:    Status        : FIRE ALERT[0m
+[1;31mE (79001) FIRE_ALARM:    FIRE ALERT! [0m
+[1;31mE (79001) FIRE_ALARM:   → EVACUATE NOW![0m
+[1;31mE (79001) FIRE_ALARM:   → CALL EMERGENCY SERVICES![0m
+[0;32mI (79011) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (79021) FIRE_ALARM: [0m
+[0;33mW (79021) FIRE_ALARM:  ACTIVATING ALARM SYSTEM![0m
+[1;31mE (79031) BUZZER: FIRE ALARM ACTIVATED![0m
+[0;32mI (84041) FIRE_ALARM: [0m
+[0;32mI (84041) FIRE_ALARM: ━━━━━━━━━━━ Reading #7 ━━━━━━━━━━━[0m
+[0;32mI (84041) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (84041) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (84051) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (84051) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (84061) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (84061) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (84071) FIRE_ALARM: [0m
+[0;32mI (84071) FIRE_ALARM:  Air cleared - Alarm deactivated[0m
+[0;32mI (87591) FIRE_ALARM: [0m
+[0;32mI (87591) FIRE_ALARM: ━━━━━━━━━━━ Reading #8 ━━━━━━━━━━━[0m
+[0;32mI (87591) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (87591) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (87601) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (87601) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (87611) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (87611) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (87621) FIRE_ALARM: [0m
+[0;32mI (90631) FIRE_ALARM: [0m
+[0;32mI (90631) FIRE_ALARM: ━━━━━━━━━━━ Reading #9 ━━━━━━━━━━━[0m
+[0;32mI (90631) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (90631) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (90641) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (90641) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (90651) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (90651) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (90661) FIRE_ALARM: [0m
+[0;32mI (93671) FIRE_ALARM: [0m
+[0;32mI (93671) FIRE_ALARM: ━━━━━━━━━━━ Reading #10 ━━━━━━━━━━━[0m
+[0;32mI (93671) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (93671) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (93681) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (93681) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (93691) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (93691) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (93701) FIRE_ALARM: [0m
+[0;32mI (96711) FIRE_ALARM: [0m
+[0;32mI (96711) FIRE_ALARM: ━━━━━━━━━━━ Reading #11 ━━━━━━━━━━━[0m
+[0;32mI (96711) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (96711) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (96721) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (96721) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (96731) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (96731) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (96741) FIRE_ALARM: [0m
+[0;32mI (99751) FIRE_ALARM: [0m
+[0;32mI (99751) FIRE_ALARM: ━━━━━━━━━━━ Reading #12 ━━━━━━━━━━━[0m
+[0;32mI (99751) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (99751) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (99761) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (99761) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (99771) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (99771) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (99781) FIRE_ALARM: [0m
+[0;32mI (102791) FIRE_ALARM: [0m
+[0;32mI (102791) FIRE_ALARM: ━━━━━━━━━━━ Reading #13 ━━━━━━━━━━━[0m
+[0;32mI (102791) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (102791) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (102801) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (102801) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (102811) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (102811) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (102821) FIRE_ALARM: [0m
+[0;32mI (105831) FIRE_ALARM: [0m
+[0;32mI (105831) FIRE_ALARM: ━━━━━━━━━━━ Reading #14 ━━━━━━━━━━━[0m
+[0;32mI (105831) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (105831) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (105841) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (105841) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (105851) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (105851) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (105861) FIRE_ALARM: [0m
+[0;32mI (108871) FIRE_ALARM: [0m
+[0;32mI (108871) FIRE_ALARM: ━━━━━━━━━━━ Reading #15 ━━━━━━━━━━━[0m
+[0;32mI (108871) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (108871) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (108881) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (108881) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (108891) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (108891) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (108901) FIRE_ALARM: [0m
+[0;32mI (111911) FIRE_ALARM: [0m
+[0;32mI (111911) FIRE_ALARM: ━━━━━━━━━━━ Reading #16 ━━━━━━━━━━━[0m
+[0;32mI (111911) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (111911) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (111921) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (111921) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (111931) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (111931) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (111941) FIRE_ALARM: [0m
+[0;32mI (114951) FIRE_ALARM: [0m
+[0;32mI (114951) FIRE_ALARM: ━━━━━━━━━━━ Reading #17 ━━━━━━━━━━━[0m
+[0;32mI (114951) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (114951) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (114961) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (114961) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (114971) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (114971) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (114981) FIRE_ALARM: [0m
+[0;32mI (117991) FIRE_ALARM: [0m
+[0;32mI (117991) FIRE_ALARM: ━━━━━━━━━━━ Reading #18 ━━━━━━━━━━━[0m
+[0;32mI (117991) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (117991) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (118001) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (118001) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (118011) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (118011) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (118021) FIRE_ALARM: [0m
+[0;32mI (121031) FIRE_ALARM: [0m
+[0;32mI (121031) FIRE_ALARM: ━━━━━━━━━━━ Reading #19 ━━━━━━━━━━━[0m
+[0;32mI (121031) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (121031) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (121041) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (121041) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (121051) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (121051) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (121061) FIRE_ALARM: [0m
+[0;32mI (124071) FIRE_ALARM: [0m
+[0;32mI (124071) FIRE_ALARM: ━━━━━━━━━━━ Reading #20 ━━━━━━━━━━━[0m
+[0;32mI (124071) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (124071) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (124081) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (124081) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (124091) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (124091) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (124101) FIRE_ALARM: [0m
+[0;32mI (127111) FIRE_ALARM: [0m
+[0;32mI (127111) FIRE_ALARM: ━━━━━━━━━━━ Reading #21 ━━━━━━━━━━━[0m
+[0;32mI (127111) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (127111) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (127121) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (127121) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (127131) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (127131) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (127141) FIRE_ALARM: [0m
+[0;32mI (130151) FIRE_ALARM: [0m
+[0;32mI (130151) FIRE_ALARM: ━━━━━━━━━━━ Reading #22 ━━━━━━━━━━━[0m
+[0;32mI (130151) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (130151) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (130161) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (130161) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (130171) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (130171) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (130181) FIRE_ALARM: [0m
+[0;32mI (133191) FIRE_ALARM: [0m
+[0;32mI (133191) FIRE_ALARM: ━━━━━━━━━━━ Reading #23 ━━━━━━━━━━━[0m
+[0;32mI (133191) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (133191) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (133201) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (133201) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (133211) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (133211) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (133221) FIRE_ALARM: [0m
+[0;32mI (136231) FIRE_ALARM: [0m
+[0;32mI (136231) FIRE_ALARM: ━━━━━━━━━━━ Reading #24 ━━━━━━━━━━━[0m
+[0;32mI (136231) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (136231) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (136241) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (136241) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (136251) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (136251) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (136261) FIRE_ALARM: [0m
+[0;32mI (139271) FIRE_ALARM: [0m
+[0;32mI (139271) FIRE_ALARM: ━━━━━━━━━━━ Reading #25 ━━━━━━━━━━━[0m
+[0;32mI (139271) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (139271) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (139281) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (139281) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (139291) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (139291) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (139301) FIRE_ALARM: [0m
+[0;32mI (142311) FIRE_ALARM: [0m
+[0;32mI (142311) FIRE_ALARM: ━━━━━━━━━━━ Reading #26 ━━━━━━━━━━━[0m
+[0;32mI (142311) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (142311) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (142321) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (142321) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (142331) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (142331) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (142341) FIRE_ALARM: [0m
+[0;32mI (145351) FIRE_ALARM: [0m
+[0;32mI (145351) FIRE_ALARM: ━━━━━━━━━━━ Reading #27 ━━━━━━━━━━━[0m
+[0;32mI (145351) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (145351) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (145361) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (145361) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (145371) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (145371) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (145381) FIRE_ALARM: [0m
+[0;32mI (148391) FIRE_ALARM: [0m
+[0;32mI (148391) FIRE_ALARM: ━━━━━━━━━━━ Reading #28 ━━━━━━━━━━━[0m
+[0;32mI (148391) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (148391) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (148401) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (148401) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (148411) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (148411) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (148421) FIRE_ALARM: [0m
+[0;32mI (151431) FIRE_ALARM: [0m
+[0;32mI (151431) FIRE_ALARM: ━━━━━━━━━━━ Reading #29 ━━━━━━━━━━━[0m
+[0;32mI (151431) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (151431) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (151441) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (151441) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (151451) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (151451) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (151461) FIRE_ALARM: [0m
+[0;32mI (154471) FIRE_ALARM: [0m
+[0;32mI (154471) FIRE_ALARM: ━━━━━━━━━━━ Reading #30 ━━━━━━━━━━━[0m
+[0;32mI (154471) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (154471) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (154481) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (154481) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (154491) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (154491) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (154501) FIRE_ALARM: [0m
+[0;32mI (157511) FIRE_ALARM: [0m
+[0;32mI (157511) FIRE_ALARM: ━━━━━━━━━━━ Reading #31 ━━━━━━━━━━━[0m
+[0;32mI (157511) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (157511) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (157521) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (157521) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (157531) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (157531) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (157541) FIRE_ALARM: [0m
+[0;32mI (160551) FIRE_ALARM: [0m
+[0;32mI (160551) FIRE_ALARM: ━━━━━━━━━━━ Reading #32 ━━━━━━━━━━━[0m
+[0;32mI (160551) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (160551) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (160561) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (160561) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (160571) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (160571) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (160581) FIRE_ALARM: [0m
+[0;32mI (163591) FIRE_ALARM: [0m
+[0;32mI (163591) FIRE_ALARM: ━━━━━━━━━━━ Reading #33 ━━━━━━━━━━━[0m
+[0;32mI (163591) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (163591) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (163601) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (163601) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (163611) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (163611) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (163621) FIRE_ALARM: [0m
+[0;32mI (166631) FIRE_ALARM: [0m
+[0;32mI (166631) FIRE_ALARM: ━━━━━━━━━━━ Reading #34 ━━━━━━━━━━━[0m
+[0;32mI (166631) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (166631) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (166641) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (166641) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (166651) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (166651) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (166661) FIRE_ALARM: [0m
+[0;32mI (169671) FIRE_ALARM: [0m
+[0;32mI (169671) FIRE_ALARM: ━━━━━━━━━━━ Reading #35 ━━━━━━━━━━━[0m
+[0;32mI (169671) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (169671) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (169681) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (169681) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (169691) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (169691) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (169701) FIRE_ALARM: [0m
+[0;32mI (172711) FIRE_ALARM: [0m
+[0;32mI (172711) FIRE_ALARM: ━━━━━━━━━━━ Reading #36 ━━━━━━━━━━━[0m
+[0;32mI (172711) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (172711) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (172721) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (172721) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (172731) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (172731) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (172741) FIRE_ALARM: [0m
+[0;32mI (175751) FIRE_ALARM: [0m
+[0;32mI (175751) FIRE_ALARM: ━━━━━━━━━━━ Reading #37 ━━━━━━━━━━━[0m
+[0;32mI (175751) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (175751) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (175761) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (175761) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (175771) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (175771) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (175781) FIRE_ALARM: [0m
+[0;32mI (178791) FIRE_ALARM: [0m
+[0;32mI (178791) FIRE_ALARM: ━━━━━━━━━━━ Reading #38 ━━━━━━━━━━━[0m
+[0;32mI (178791) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (178791) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (178801) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (178801) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (178811) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (178811) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (178821) FIRE_ALARM: [0m
+[0;32mI (181831) FIRE_ALARM: [0m
+[0;32mI (181831) FIRE_ALARM: ━━━━━━━━━━━ Reading #39 ━━━━━━━━━━━[0m
+[0;32mI (181831) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (181831) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (181841) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (181841) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (181851) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (181851) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (181861) FIRE_ALARM: [0m
+[0;32mI (184871) FIRE_ALARM: [0m
+[0;32mI (184871) FIRE_ALARM: ━━━━━━━━━━━ Reading #40 ━━━━━━━━━━━[0m
+[0;32mI (184871) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (184871) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (184881) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (184881) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (184891) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (184891) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (184901) FIRE_ALARM: [0m
+[0;32mI (187911) FIRE_ALARM: [0m
+[0;32mI (187911) FIRE_ALARM: ━━━━━━━━━━━ Reading #41 ━━━━━━━━━━━[0m
+[0;32mI (187911) FIRE_ALARM:    Raw ADC       : 0[0m
+[0;32mI (187911) FIRE_ALARM:    Voltage       : 0.14 V[0m
+[0;32mI (187921) FIRE_ALARM:    Concentration : 9 PPM[0m
+[0;32mI (187921) FIRE_ALARM:    Status        : CLEAR[0m
+[0;32mI (187931) FIRE_ALARM:    Environment is SAFE[0m
+[0;32mI (187931) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (187941) FIRE_ALARM: [0m
+[0;32mI (190951) FIRE_ALARM: [0m
+[0;32mI (190951) FIRE_ALARM: ━━━━━━━━━━━ Reading #42 ━━━━━━━━━━━[0m
+[0;32mI (190951) FIRE_ALARM:    Raw ADC       : 0

@@ -1,0 +1,2 @@
+source /home/pseudonymous/st-mini-project/zero-power/build/bootloader/gdbinit/symbols
+source /home/pseudonymous/st-mini-project/zero-power/build/bootloader/gdbinit/connect
