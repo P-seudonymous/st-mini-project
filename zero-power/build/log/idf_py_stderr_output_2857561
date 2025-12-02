@@ -1,0 +1,12 @@
+Command: ninja flash
+
+A fatal error occurred: Could not open /dev/ttyUSB0, the port is busy or doesn't exist.
+([Errno 11] Could not exclusively lock port /dev/ttyUSB0: [Errno 11] Resource temporarily unavailable)
+
+CMake Error at /home/pseudonymous/esp-idf/components/esptool_py/run_serial_tool.cmake:67 (message):
+  
+  /home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python;;/home/pseudonymous/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32
+  failed.
+
+
+

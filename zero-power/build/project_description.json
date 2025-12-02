@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "zero-power",
-    "project_version":    "52a47f5-dirty",
+    "project_version":    "05e81c6-dirty",
     "project_path":       "/home/pseudonymous/st-mini-project/zero-power",
     "idf_path":           "/home/pseudonymous/esp-idf",
     "build_dir":          "/home/pseudonymous/st-mini-project/zero-power/build",
@@ -25,8 +25,8 @@
         "COMPONENT_KCONFIGS_PROJBUILD" : "/home/pseudonymous/esp-idf/components/bootloader/Kconfig.projbuild;/home/pseudonymous/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/pseudonymous/esp-idf/components/esp_rom/Kconfig.projbuild;/home/pseudonymous/esp-idf/components/esptool_py/Kconfig.projbuild;/home/pseudonymous/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "buzzer_driver", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_cam", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_i3c", "esp_driver_isp", "esp_driver_jpeg", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_ppa", "esp_driver_rmt", "esp_driver_sd_intf", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_touch_sens", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "espcoredump", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mq135_driver", "mqtt", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "rt", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "/home/pseudonymous/esp-idf/components/app_trace", "/home/pseudonymous/esp-idf/components/app_update", "/home/pseudonymous/esp-idf/components/bootloader", "/home/pseudonymous/esp-idf/components/bootloader_support", "/home/pseudonymous/esp-idf/components/bt", "/home/pseudonymous/st-mini-project/zero-power/components/buzzer_driver", "/home/pseudonymous/esp-idf/components/cmock", "/home/pseudonymous/esp-idf/components/console", "/home/pseudonymous/esp-idf/components/cxx", "/home/pseudonymous/esp-idf/components/driver", "/home/pseudonymous/esp-idf/components/efuse", "/home/pseudonymous/esp-idf/components/esp-tls", "/home/pseudonymous/esp-idf/components/esp_adc", "/home/pseudonymous/esp-idf/components/esp_app_format", "/home/pseudonymous/esp-idf/components/esp_bootloader_format", "/home/pseudonymous/esp-idf/components/esp_coex", "/home/pseudonymous/esp-idf/components/esp_common", "/home/pseudonymous/esp-idf/components/esp_driver_ana_cmpr", "/home/pseudonymous/esp-idf/components/esp_driver_bitscrambler", "/home/pseudonymous/esp-idf/components/esp_driver_cam", "/home/pseudonymous/esp-idf/components/esp_driver_dac", "/home/pseudonymous/esp-idf/components/esp_driver_gpio", "/home/pseudonymous/esp-idf/components/esp_driver_gptimer", "/home/pseudonymous/esp-idf/components/esp_driver_i2c", "/home/pseudonymous/esp-idf/components/esp_driver_i2s", "/home/pseudonymous/esp-idf/components/esp_driver_i3c", "/home/pseudonymous/esp-idf/components/esp_driver_isp", "/home/pseudonymous/esp-idf/components/esp_driver_jpeg", "/home/pseudonymous/esp-idf/components/esp_driver_ledc", "/home/pseudonymous/esp-idf/components/esp_driver_mcpwm", "/home/pseudonymous/esp-idf/components/esp_driver_parlio", "/home/pseudonymous/esp-idf/components/esp_driver_pcnt", "/home/pseudonymous/esp-idf/components/esp_driver_ppa", "/home/pseudonymous/esp-idf/components/esp_driver_rmt", "/home/pseudonymous/esp-idf/components/esp_driver_sd_intf", "/home/pseudonymous/esp-idf/components/esp_driver_sdio", "/home/pseudonymous/esp-idf/components/esp_driver_sdm", "/home/pseudonymous/esp-idf/components/esp_driver_sdmmc", "/home/pseudonymous/esp-idf/components/esp_driver_sdspi", "/home/pseudonymous/esp-idf/components/esp_driver_spi", "/home/pseudonymous/esp-idf/components/esp_driver_touch_sens", "/home/pseudonymous/esp-idf/components/esp_driver_tsens", "/home/pseudonymous/esp-idf/components/esp_driver_twai", "/home/pseudonymous/esp-idf/components/esp_driver_uart", "/home/pseudonymous/esp-idf/components/esp_driver_usb_serial_jtag", "/home/pseudonymous/esp-idf/components/esp_eth", "/home/pseudonymous/esp-idf/components/esp_event", "/home/pseudonymous/esp-idf/components/esp_gdbstub", "/home/pseudonymous/esp-idf/components/esp_hid", "/home/pseudonymous/esp-idf/components/esp_http_client", "/home/pseudonymous/esp-idf/components/esp_http_server", "/home/pseudonymous/esp-idf/components/esp_https_ota", "/home/pseudonymous/esp-idf/components/esp_https_server", "/home/pseudonymous/esp-idf/components/esp_hw_support", "/home/pseudonymous/esp-idf/components/esp_lcd", "/home/pseudonymous/esp-idf/components/esp_local_ctrl", "/home/pseudonymous/esp-idf/components/esp_mm", "/home/pseudonymous/esp-idf/components/esp_netif", "/home/pseudonymous/esp-idf/components/esp_netif_stack", "/home/pseudonymous/esp-idf/components/esp_partition", "/home/pseudonymous/esp-idf/components/esp_phy", "/home/pseudonymous/esp-idf/components/esp_pm", "/home/pseudonymous/esp-idf/components/esp_psram", "/home/pseudonymous/esp-idf/components/esp_ringbuf", "/home/pseudonymous/esp-idf/components/esp_rom", "/home/pseudonymous/esp-idf/components/esp_security", "/home/pseudonymous/esp-idf/components/esp_system", "/home/pseudonymous/esp-idf/components/esp_timer", "/home/pseudonymous/esp-idf/components/esp_vfs_console", "/home/pseudonymous/esp-idf/components/esp_wifi", "/home/pseudonymous/esp-idf/components/espcoredump", "/home/pseudonymous/esp-idf/components/esptool_py", "/home/pseudonymous/esp-idf/components/fatfs", "/home/pseudonymous/esp-idf/components/freertos", "/home/pseudonymous/esp-idf/components/hal", "/home/pseudonymous/esp-idf/components/heap", "/home/pseudonymous/esp-idf/components/http_parser", "/home/pseudonymous/esp-idf/components/idf_test", "/home/pseudonymous/esp-idf/components/ieee802154", "/home/pseudonymous/esp-idf/components/json", "/home/pseudonymous/esp-idf/components/log", "/home/pseudonymous/esp-idf/components/lwip", "/home/pseudonymous/st-mini-project/zero-power/main", "/home/pseudonymous/esp-idf/components/mbedtls", "/home/pseudonymous/st-mini-project/zero-power/components/mq135_driver", "/home/pseudonymous/esp-idf/components/mqtt", "/home/pseudonymous/esp-idf/components/newlib", "/home/pseudonymous/esp-idf/components/nvs_flash", "/home/pseudonymous/esp-idf/components/nvs_sec_provider", "/home/pseudonymous/esp-idf/components/openthread", "/home/pseudonymous/esp-idf/components/partition_table", "/home/pseudonymous/esp-idf/components/perfmon", "/home/pseudonymous/esp-idf/components/protobuf-c", "/home/pseudonymous/esp-idf/components/protocomm", "/home/pseudonymous/esp-idf/components/pthread", "/home/pseudonymous/esp-idf/components/rt", "/home/pseudonymous/esp-idf/components/sdmmc", "/home/pseudonymous/esp-idf/components/soc", "/home/pseudonymous/esp-idf/components/spi_flash", "/home/pseudonymous/esp-idf/components/spiffs", "/home/pseudonymous/esp-idf/components/tcp_transport", "/home/pseudonymous/esp-idf/components/ulp", "/home/pseudonymous/esp-idf/components/unity", "/home/pseudonymous/esp-idf/components/usb", "/home/pseudonymous/esp-idf/components/vfs", "/home/pseudonymous/esp-idf/components/wear_levelling", "/home/pseudonymous/esp-idf/components/wifi_provisioning", "/home/pseudonymous/esp-idf/components/wpa_supplicant", "/home/pseudonymous/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_trace", "app_update", "battery_monitor", "bootloader", "bootloader_support", "bt", "buzzer_driver", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_cam", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_i3c", "esp_driver_isp", "esp_driver_jpeg", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_ppa", "esp_driver_rmt", "esp_driver_sd_intf", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_touch_sens", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "espcoredump", "espressif__ssd1306", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mq135_driver", "mqtt", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "perfmon", "pir_sensor", "protobuf-c", "protocomm", "pthread", "rt", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "usb", "vfs", "wear_levelling", "web_dashboard", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "/home/pseudonymous/esp-idf/components/app_trace", "/home/pseudonymous/esp-idf/components/app_update", "/home/pseudonymous/st-mini-project/zero-power/components/battery_monitor", "/home/pseudonymous/esp-idf/components/bootloader", "/home/pseudonymous/esp-idf/components/bootloader_support", "/home/pseudonymous/esp-idf/components/bt", "/home/pseudonymous/st-mini-project/zero-power/components/buzzer_driver", "/home/pseudonymous/esp-idf/components/cmock", "/home/pseudonymous/esp-idf/components/console", "/home/pseudonymous/esp-idf/components/cxx", "/home/pseudonymous/esp-idf/components/driver", "/home/pseudonymous/esp-idf/components/efuse", "/home/pseudonymous/esp-idf/components/esp-tls", "/home/pseudonymous/esp-idf/components/esp_adc", "/home/pseudonymous/esp-idf/components/esp_app_format", "/home/pseudonymous/esp-idf/components/esp_bootloader_format", "/home/pseudonymous/esp-idf/components/esp_coex", "/home/pseudonymous/esp-idf/components/esp_common", "/home/pseudonymous/esp-idf/components/esp_driver_ana_cmpr", "/home/pseudonymous/esp-idf/components/esp_driver_bitscrambler", "/home/pseudonymous/esp-idf/components/esp_driver_cam", "/home/pseudonymous/esp-idf/components/esp_driver_dac", "/home/pseudonymous/esp-idf/components/esp_driver_gpio", "/home/pseudonymous/esp-idf/components/esp_driver_gptimer", "/home/pseudonymous/esp-idf/components/esp_driver_i2c", "/home/pseudonymous/esp-idf/components/esp_driver_i2s", "/home/pseudonymous/esp-idf/components/esp_driver_i3c", "/home/pseudonymous/esp-idf/components/esp_driver_isp", "/home/pseudonymous/esp-idf/components/esp_driver_jpeg", "/home/pseudonymous/esp-idf/components/esp_driver_ledc", "/home/pseudonymous/esp-idf/components/esp_driver_mcpwm", "/home/pseudonymous/esp-idf/components/esp_driver_parlio", "/home/pseudonymous/esp-idf/components/esp_driver_pcnt", "/home/pseudonymous/esp-idf/components/esp_driver_ppa", "/home/pseudonymous/esp-idf/components/esp_driver_rmt", "/home/pseudonymous/esp-idf/components/esp_driver_sd_intf", "/home/pseudonymous/esp-idf/components/esp_driver_sdio", "/home/pseudonymous/esp-idf/components/esp_driver_sdm", "/home/pseudonymous/esp-idf/components/esp_driver_sdmmc", "/home/pseudonymous/esp-idf/components/esp_driver_sdspi", "/home/pseudonymous/esp-idf/components/esp_driver_spi", "/home/pseudonymous/esp-idf/components/esp_driver_touch_sens", "/home/pseudonymous/esp-idf/components/esp_driver_tsens", "/home/pseudonymous/esp-idf/components/esp_driver_twai", "/home/pseudonymous/esp-idf/components/esp_driver_uart", "/home/pseudonymous/esp-idf/components/esp_driver_usb_serial_jtag", "/home/pseudonymous/esp-idf/components/esp_eth", "/home/pseudonymous/esp-idf/components/esp_event", "/home/pseudonymous/esp-idf/components/esp_gdbstub", "/home/pseudonymous/esp-idf/components/esp_hid", "/home/pseudonymous/esp-idf/components/esp_http_client", "/home/pseudonymous/esp-idf/components/esp_http_server", "/home/pseudonymous/esp-idf/components/esp_https_ota", "/home/pseudonymous/esp-idf/components/esp_https_server", "/home/pseudonymous/esp-idf/components/esp_hw_support", "/home/pseudonymous/esp-idf/components/esp_lcd", "/home/pseudonymous/esp-idf/components/esp_local_ctrl", "/home/pseudonymous/esp-idf/components/esp_mm", "/home/pseudonymous/esp-idf/components/esp_netif", "/home/pseudonymous/esp-idf/components/esp_netif_stack", "/home/pseudonymous/esp-idf/components/esp_partition", "/home/pseudonymous/esp-idf/components/esp_phy", "/home/pseudonymous/esp-idf/components/esp_pm", "/home/pseudonymous/esp-idf/components/esp_psram", "/home/pseudonymous/esp-idf/components/esp_ringbuf", "/home/pseudonymous/esp-idf/components/esp_rom", "/home/pseudonymous/esp-idf/components/esp_security", "/home/pseudonymous/esp-idf/components/esp_system", "/home/pseudonymous/esp-idf/components/esp_timer", "/home/pseudonymous/esp-idf/components/esp_vfs_console", "/home/pseudonymous/esp-idf/components/esp_wifi", "/home/pseudonymous/esp-idf/components/espcoredump", "/home/pseudonymous/st-mini-project/zero-power/managed_components/espressif__ssd1306", "/home/pseudonymous/esp-idf/components/esptool_py", "/home/pseudonymous/esp-idf/components/fatfs", "/home/pseudonymous/esp-idf/components/freertos", "/home/pseudonymous/esp-idf/components/hal", "/home/pseudonymous/esp-idf/components/heap", "/home/pseudonymous/esp-idf/components/http_parser", "/home/pseudonymous/esp-idf/components/idf_test", "/home/pseudonymous/esp-idf/components/ieee802154", "/home/pseudonymous/esp-idf/components/json", "/home/pseudonymous/esp-idf/components/log", "/home/pseudonymous/esp-idf/components/lwip", "/home/pseudonymous/st-mini-project/zero-power/main", "/home/pseudonymous/esp-idf/components/mbedtls", "/home/pseudonymous/st-mini-project/zero-power/components/mq135_driver", "/home/pseudonymous/esp-idf/components/mqtt", "/home/pseudonymous/esp-idf/components/newlib", "/home/pseudonymous/esp-idf/components/nvs_flash", "/home/pseudonymous/esp-idf/components/nvs_sec_provider", "/home/pseudonymous/esp-idf/components/openthread", "/home/pseudonymous/esp-idf/components/partition_table", "/home/pseudonymous/esp-idf/components/perfmon", "/home/pseudonymous/st-mini-project/zero-power/components/pir_sensor", "/home/pseudonymous/esp-idf/components/protobuf-c", "/home/pseudonymous/esp-idf/components/protocomm", "/home/pseudonymous/esp-idf/components/pthread", "/home/pseudonymous/esp-idf/components/rt", "/home/pseudonymous/esp-idf/components/sdmmc", "/home/pseudonymous/esp-idf/components/soc", "/home/pseudonymous/esp-idf/components/spi_flash", "/home/pseudonymous/esp-idf/components/spiffs", "/home/pseudonymous/esp-idf/components/tcp_transport", "/home/pseudonymous/esp-idf/components/ulp", "/home/pseudonymous/esp-idf/components/unity", "/home/pseudonymous/esp-idf/components/usb", "/home/pseudonymous/esp-idf/components/vfs", "/home/pseudonymous/esp-idf/components/wear_levelling", "/home/pseudonymous/st-mini-project/zero-power/components/web_dashboard", "/home/pseudonymous/esp-idf/components/wifi_provisioning", "/home/pseudonymous/esp-idf/components/wpa_supplicant", "/home/pseudonymous/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_trace": {
             "alias": "idf::app_trace",
@@ -56,6 +56,21 @@
             "managed_priv_reqs": [],
             "file": "/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/app_update/libapp_update.a",
             "sources": [ "/home/pseudonymous/esp-idf/components/app_update/esp_ota_ops.c", "/home/pseudonymous/esp-idf/components/app_update/esp_ota_app_desc.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "battery_monitor": {
+            "alias": "idf::battery_monitor",
+            "target": "___idf_battery_monitor",
+            "prefix": "idf",
+            "dir": "/home/pseudonymous/st-mini-project/zero-power/components/battery_monitor",
+            "type": "LIBRARY",
+            "lib": "__idf_battery_monitor",
+            "reqs": [ "esp_adc" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/battery_monitor/libbattery_monitor.a",
+            "sources": [ "/home/pseudonymous/st-mini-project/zero-power/components/battery_monitor/battery_monitor.c" ],
             "include_dirs": [ "include" ]
         },
         "bootloader": {
@@ -1093,6 +1108,21 @@
             "sources": [ "/home/pseudonymous/esp-idf/components/espcoredump/src/core_dump_init.c", "/home/pseudonymous/esp-idf/components/espcoredump/src/core_dump_common.c", "/home/pseudonymous/esp-idf/components/espcoredump/src/core_dump_flash.c", "/home/pseudonymous/esp-idf/components/espcoredump/src/core_dump_uart.c", "/home/pseudonymous/esp-idf/components/espcoredump/src/core_dump_elf.c", "/home/pseudonymous/esp-idf/components/espcoredump/src/core_dump_binary.c", "/home/pseudonymous/esp-idf/components/espcoredump/src/core_dump_sha.c", "/home/pseudonymous/esp-idf/components/espcoredump/src/core_dump_crc.c", "/home/pseudonymous/esp-idf/components/espcoredump/src/port/xtensa/core_dump_port.c" ],
             "include_dirs": [ "include", "include/port/xtensa" ]
         },
+        "espressif__ssd1306": {
+            "alias": "idf::espressif__ssd1306",
+            "target": "___idf_espressif__ssd1306",
+            "prefix": "idf",
+            "dir": "/home/pseudonymous/st-mini-project/zero-power/managed_components/espressif__ssd1306",
+            "type": "LIBRARY",
+            "lib": "__idf_espressif__ssd1306",
+            "reqs": [ "driver" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/espressif__ssd1306/libespressif__ssd1306.a",
+            "sources": [ "/home/pseudonymous/st-mini-project/zero-power/managed_components/espressif__ssd1306/ssd1306.c", "/home/pseudonymous/st-mini-project/zero-power/managed_components/espressif__ssd1306/ssd1306_fonts.c" ],
+            "include_dirs": [ "include" ]
+        },
         "esptool_py": {
             "alias": "idf::esptool_py",
             "target": "___idf_esptool_py",
@@ -1265,10 +1295,10 @@
             "dir": "/home/pseudonymous/st-mini-project/zero-power/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
-            "reqs": [ "mq135_driver", "buzzer_driver" ],
-            "priv_reqs": [],
+            "reqs": [ "mq135_driver", "buzzer_driver", "battery_monitor", "pir_sensor", "web_dashboard" ],
+            "priv_reqs": [ "espressif__ssd1306" ],
             "managed_reqs": [],
-            "managed_priv_reqs": [],
+            "managed_priv_reqs": [ "espressif__ssd1306" ],
             "file": "/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/main/libmain.a",
             "sources": [ "/home/pseudonymous/st-mini-project/zero-power/main/main.c" ],
             "include_dirs": [ "." ]
@@ -1406,6 +1436,21 @@
             "managed_priv_reqs": [],
             "file": "/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/perfmon/libperfmon.a",
             "sources": [ "/home/pseudonymous/esp-idf/components/perfmon/xtensa_perfmon_access.c", "/home/pseudonymous/esp-idf/components/perfmon/xtensa_perfmon_apis.c", "/home/pseudonymous/esp-idf/components/perfmon/xtensa_perfmon_masks.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "pir_sensor": {
+            "alias": "idf::pir_sensor",
+            "target": "___idf_pir_sensor",
+            "prefix": "idf",
+            "dir": "/home/pseudonymous/st-mini-project/zero-power/components/pir_sensor",
+            "type": "LIBRARY",
+            "lib": "__idf_pir_sensor",
+            "reqs": [ "driver" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/pir_sensor/libpir_sensor.a",
+            "sources": [ "/home/pseudonymous/st-mini-project/zero-power/components/pir_sensor/pir_sensor.c" ],
             "include_dirs": [ "include" ]
         },
         "protobuf-c": {
@@ -1616,6 +1661,21 @@
             "managed_priv_reqs": [],
             "file": "/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/wear_levelling/libwear_levelling.a",
             "sources": [ "/home/pseudonymous/esp-idf/components/wear_levelling/Partition.cpp", "/home/pseudonymous/esp-idf/components/wear_levelling/SPI_Flash.cpp", "/home/pseudonymous/esp-idf/components/wear_levelling/WL_Ext_Perf.cpp", "/home/pseudonymous/esp-idf/components/wear_levelling/WL_Ext_Safe.cpp", "/home/pseudonymous/esp-idf/components/wear_levelling/WL_Flash.cpp", "/home/pseudonymous/esp-idf/components/wear_levelling/crc32.cpp", "/home/pseudonymous/esp-idf/components/wear_levelling/wear_levelling.cpp" ],
+            "include_dirs": [ "include" ]
+        },
+        "web_dashboard": {
+            "alias": "idf::web_dashboard",
+            "target": "___idf_web_dashboard",
+            "prefix": "idf",
+            "dir": "/home/pseudonymous/st-mini-project/zero-power/components/web_dashboard",
+            "type": "LIBRARY",
+            "lib": "__idf_web_dashboard",
+            "reqs": [ "driver", "nvs_flash", "esp_wifi", "esp_netif", "esp_http_server" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/web_dashboard/libweb_dashboard.a",
+            "sources": [ "/home/pseudonymous/st-mini-project/zero-power/components/web_dashboard/web_dashboard.c" ],
             "include_dirs": [ "include" ]
         },
         "wifi_provisioning": {
@@ -2991,11 +3051,23 @@
             "prefix": "idf",
             "dir": "/home/pseudonymous/st-mini-project/zero-power/main",
             "lib": "__idf_main",
-            "reqs": [ "mq135_driver", "buzzer_driver" ],
+            "reqs": [ "mq135_driver", "buzzer_driver", "battery_monitor", "pir_sensor", "web_dashboard" ],
+            "priv_reqs": [ "espressif__ssd1306" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [ "espressif__ssd1306" ],
+            "include_dirs": [ "." ]
+        },
+        "battery_monitor": {
+            "alias": "idf::battery_monitor",
+            "target": "___idf_battery_monitor",
+            "prefix": "idf",
+            "dir": "/home/pseudonymous/st-mini-project/zero-power/components/battery_monitor",
+            "lib": "__idf_battery_monitor",
+            "reqs": [ "esp_adc" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "." ]
+            "include_dirs": [ "include" ]
         },
         "buzzer_driver": {
             "alias": "idf::buzzer_driver",
@@ -3016,6 +3088,42 @@
             "dir": "/home/pseudonymous/st-mini-project/zero-power/components/mq135_driver",
             "lib": "__idf_mq135_driver",
             "reqs": [ "esp_adc" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
+        "pir_sensor": {
+            "alias": "idf::pir_sensor",
+            "target": "___idf_pir_sensor",
+            "prefix": "idf",
+            "dir": "/home/pseudonymous/st-mini-project/zero-power/components/pir_sensor",
+            "lib": "__idf_pir_sensor",
+            "reqs": [ "driver" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
+        "web_dashboard": {
+            "alias": "idf::web_dashboard",
+            "target": "___idf_web_dashboard",
+            "prefix": "idf",
+            "dir": "/home/pseudonymous/st-mini-project/zero-power/components/web_dashboard",
+            "lib": "__idf_web_dashboard",
+            "reqs": [ "driver", "nvs_flash", "esp_wifi", "esp_netif", "esp_http_server" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
+        "espressif__ssd1306": {
+            "alias": "idf::espressif__ssd1306",
+            "target": "___idf_espressif__ssd1306",
+            "prefix": "idf",
+            "dir": "/home/pseudonymous/st-mini-project/zero-power/managed_components/espressif__ssd1306",
+            "lib": "__idf_espressif__ssd1306",
+            "reqs": [ "driver" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],

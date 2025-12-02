@@ -1,0 +1,43 @@
+Command: ninja all
+[1/13] Linking C static library esp-idf/mqtt/libmqtt.a
+[2/13] Linking C static library esp-idf/spiffs/libspiffs.a
+[3/13] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[4/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/pseudonymous/st-mini-project/zero-power/main/main.c: In function 'app_main':
+/home/pseudonymous/st-mini-project/zero-power/main/main.c:14:5: warning: 'ssd1306_create' is deprecated: This driver is DEPRECATED. Please use updated SSD1306 driver from ESP-IDF. [-Wdeprecated-declarations]
+   14 |     ssd1306_handle_t oled = ssd1306_create(I2C_NUM_0, 0x3C);
+      |     ^~~~~~~~~~~~~~~~
+In file included from /home/pseudonymous/st-mini-project/zero-power/main/main.c:5:
+/home/pseudonymous/st-mini-project/zero-power/managed_components/espressif__ssd1306/include/ssd1306.h:53:18: note: declared here
+   53 | ssd1306_handle_t ssd1306_create(i2c_port_t port, uint16_t dev_addr)
+      |                  ^~~~~~~~~~~~~~
+[5/13] Linking C static library esp-idf/main/libmain.a
+[6/13] Performing build step for 'bootloader'
+[1/3] Linking C executable bootloader.elf
+[2/3] Generating binary image from built executable
+Warning: Deprecated: Option '--flash_mode' is deprecated. Use '--flash-mode' instead.
+Warning: Deprecated: Option '--flash_freq' is deprecated. Use '--flash-freq' instead.
+Warning: Deprecated: Option '--flash_size' is deprecated. Use '--flash-size' instead.
+esptool v5.1.0
+Creating ESP32 image...
+Merged 2 ELF sections.
+Successfully created ESP32 image.
+Generated /home/pseudonymous/st-mini-project/zero-power/build/bootloader/bootloader.bin
+[3/3] cd /home/pseudonymous/st-mini-project/zero-power/build/bootloader && /home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python /home/pseudonymous/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/pseudonymous/st-mini-project/zero-power/build/bootloader/bootloader.bin
+Bootloader binary size 0x6690 bytes. 0x970 bytes (8%) free.
+[7/13] No install step for 'bootloader'
+[8/13] Completed 'bootloader'
+[9/13] Generating esp-idf/esp_system/ld/sections.ld
+[10/13] Building C object CMakeFiles/zero-power.elf.dir/project_elf_src_esp32.c.obj
+[11/13] Linking CXX executable zero-power.elf
+[12/13] Generating binary image from built executable
+Warning: Deprecated: Option '--flash_mode' is deprecated. Use '--flash-mode' instead.
+Warning: Deprecated: Option '--flash_freq' is deprecated. Use '--flash-freq' instead.
+Warning: Deprecated: Option '--flash_size' is deprecated. Use '--flash-size' instead.
+esptool v5.1.0
+Creating ESP32 image...
+Merged 2 ELF sections.
+Successfully created ESP32 image.
+Generated /home/pseudonymous/st-mini-project/zero-power/build/zero-power.bin
+[13/13] cd /home/pseudonymous/st-mini-project/zero-power/build && /home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python /home/pseudonymous/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/pseudonymous/st-mini-project/zero-power/build/partition_table/partition-table.bin /home/pseudonymous/st-mini-project/zero-power/build/zero-power.bin
+zero-power.bin binary size 0x2f060 bytes. Smallest app partition is 0x100000 bytes. 0xd0fa0 bytes (82%) free.

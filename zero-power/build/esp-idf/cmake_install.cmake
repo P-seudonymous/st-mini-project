@@ -579,6 +579,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/battery_monitor/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/pir_sensor/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/web_dashboard/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/espressif__ssd1306/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/main/cmake_install.cmake")
 endif()
 

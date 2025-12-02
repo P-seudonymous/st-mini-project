@@ -1,0 +1,242 @@
+Command: /home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python /home/pseudonymous/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/pseudonymous/st-mini-project/zero-power/build/zero-power.elf /home/pseudonymous/st-mini-project/zero-power/build/bootloader/bootloader.elf -m '/home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python' '/home/pseudonymous/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15920
+ho 0 tail 12 room 4
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  9 2025 07:13:04[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f410h (128016) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=0002f438 vaddr=3ffb0000 size=00be0h (  3040) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=919bch (596412) map[0m
+[0;32mI (350) esp_image: segment 3: paddr=000c19e4 vaddr=3ffb0be0 size=03584h ( 13700) load[0m
+[0;32mI (355) esp_image: segment 4: paddr=000c4f70 vaddr=40080000 size=192d8h (103128) load[0m
+[0;32mI (397) esp_image: segment 5: paddr=000de250 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (410) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (410) boot: Disabling RNG early entropy source...[0m
+[0;32mI (421) cpu_start: Multicore app[0m
+[0;32mI (429) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (429) cpu_start: Pro cpu start user code[0m
+[0;32mI (429) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (431) app_init: Application information:[0m
+[0;32mI (435) app_init: Project name:     zero-power[0m
+[0;32mI (439) app_init: App version:      05e81c6-dirty[0m
+[0;32mI (443) app_init: Compile time:     Nov  3 2025 05:57:54[0m
+[0;32mI (448) app_init: ELF file SHA256:  de28a900f...[0m
+[0;32mI (453) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (458) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (462) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (466) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (470) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (476) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (481) heap_init: At 3FFB8290 len 00027D70 (159 KiB): DRAM[0m
+[0;32mI (486) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (492) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 400992D8 len 00006D28 (27 KiB): IRAM[0m
+[0;32mI (504) spi_flash: detected chip: generic[0m
+[0;32mI (506) spi_flash: flash io: dio[0m
+[0;33mW (509) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (521) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (532) main_task: Started on CPU0[0m
+[0;32mI (542) main_task: Calling app_main()[0m
+[0;32mI (542) FIRE_ALARM: [0m
+[0;32mI (542) FIRE_ALARM: ╔═══════════════════════════════════════════════╗[0m
+[0;32mI (552) FIRE_ALARM: ║          SMART FIRE DETECTION SYSTEM          ║[0m
+[0;32mI (552) FIRE_ALARM: ║   ESP32 + MQ135 + PIR + Solar + Web Control   ║[0m
+[0;32mI (562) FIRE_ALARM: ╚═══════════════════════════════════════════════╝[0m
+[0;32mI (572) FIRE_ALARM: [0m
+[0;32mI (582) FIRE_ALARM: ✓ I2C initialized[0m
+[0;32mI (582) FIRE_ALARM: ✓ ADC1 unit initialized[0m
+[0;32mI (582) FIRE_ALARM: [0m
+[0;32mI (592) FIRE_ALARM: Initializing peripherals...[0m
+[0;32mI (602) FIRE_ALARM: ✓ OLED display[0m
+[0;32mI (602) MQ135: ✓ ADC calibration: Line Fitting Scheme[0m
+[0;32mI (602) MQ135: ✓ MQ135 Smoke Detector initialized on GPIO34[0m
+[0;32mI (602) BUZZER: Active buzzer initialized on GPIO23[0m
+[0;32mI (612) BATTERY:   Battery monitor calibrated[0m
+[0;32mI (612) BATTERY:   Battery monitor initialized on GPIO35[0m
+[0;32mI (622) BATTERY:   Voltage divider: 3.3kΩ + 1kΩ (ratio: 4.3)[0m
+[0;32mI (622) PIR: PIR sensor initialized on GPIO18[0m
+[0;32mI (632) FIRE_ALARM: [0m
+[0;32mI (632) FIRE_ALARM: Starting web dashboard...[0m
+[0;32mI (632) DASHBOARD: Fan GPIO25 and LED GPIO26 initialized[0m
+[0;32mI (672) wifi:wifi driver task: 3ffc092c, prio:23, stack:6656, core=0[0m
+[0;32mI (682) wifi:wifi firmware version: 5984c42[0m
+[0;32mI (682) wifi:wifi certification version: v7.0[0m
+[0;32mI (682) wifi:config NVS flash: enabled[0m
+[0;32mI (682) wifi:config nano formatting: disabled[0m
+[0;32mI (682) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (692) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (692) wifi:Init management short buffer num: 32[0m
+[0;32mI (702) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (702) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (712) wifi:Init static rx buffer num: 10[0m
+[0;32mI (712) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (712) wifi_init: rx ba win: 6[0m
+[0;32mI (722) wifi_init: accept mbox: 6[0m
+[0;32mI (722) wifi_init: tcpip mbox: 32[0m
+[0;32mI (722) wifi_init: udp mbox: 6[0m
+[0;32mI (732) wifi_init: tcp mbox: 6[0m
+[0;32mI (732) wifi_init: tcp tx win: 5760[0m
+[0;32mI (732) wifi_init: tcp rx win: 5760[0m
+[0;32mI (732) wifi_init: tcp mss: 1440[0m
+[0;32mI (742) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (742) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (752) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (752) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (842) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (912) wifi:mode : sta (2c:bc:bb:4c:7b:3c)[0m
+[0;32mI (922) wifi:enable tsf[0m
+[0;32mI (922) DASHBOARD: Connecting to WiFi SSID: shunya[0m
+[0;32mI (932) DASHBOARD: Web server started[0m
+[0;32mI (3332) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (4232) FIRE_ALARM: [0m
+[0;32mI (4232) FIRE_ALARM: Warming up MQ135 sensor (60 seconds)...[0m
+[0;32mI (4232) FIRE_ALARM:   Countdown: 60 seconds...[0m
+[0;32mI (5752) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (8172) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (10582) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (13002) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (14232) FIRE_ALARM:   Countdown: 50 seconds...[0m
+[0;32mI (15412) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (17832) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (20242) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (22662) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (24232) FIRE_ALARM:   Countdown: 40 seconds...[0m
+[0;32mI (25072) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (27492) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (29902) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (32322) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (34232) FIRE_ALARM:   Countdown: 30 seconds...[0m
+[0;32mI (34732) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (37152) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (39562) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (13) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time Oct  9 2025 07:13:04[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (15) boot: chip revision: v3.1[0m
+[0;32mI (18) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (22) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (25) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (29) boot: Enabling RNG early entropy source...[0m
+[0;32mI (33) boot: Partition Table:[0m
+[0;32mI (36) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (42) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (49) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (55) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (62) boot: End of partition table[0m
+[0;32mI (65) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f410h (128016) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002f438 vaddr=3ffb0000 size=00be0h (  3040) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=919bch (596412) map[0m
+[0;32mI (333) esp_image: segment 3: paddr=000c19e4 vaddr=3ffb0be0 size=03584h ( 13700) load[0m
+[0;32mI (338) esp_image: segment 4: paddr=000c4f70 vaddr=40080000 size=192d8h (103128) load[0m
+[0;32mI (380) esp_image: segment 5: paddr=000de250 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (393) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (393) boot: Disabling RNG early entropy source...[0m
+[0;32mI (404) cpu_start: Multicore app[0m
+[0;32mI (412) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (412) cpu_start: Pro cpu start user code[0m
+[0;32mI (412) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (414) app_init: Application information:[0m
+[0;32mI (418) app_init: Project name:     zero-power[0m
+[0;32mI (422) app_init: App version:      05e81c6-dirty[0m
+[0;32mI (426) app_init: Compile time:     Nov  3 2025 05:57:54[0m
+[0;32mI (431) app_init: ELF file SHA256:  de28a900f...[0m
+[0;32mI (436) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (441) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (445) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (449) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (459) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFB8290 len 00027D70 (159 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (475) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (480) heap_init: At 400992D8 len 00006D28 (27 KiB): IRAM[0m
+[0;32mI (487) spi_flash: detected chip: generic[0m
+[0;32mI (489) spi_flash: flash io: dio[0m
+[0;33mW (492) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (505) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (515) main_task: Started on CPU0[0m
+[0;32mI (525) main_task: Calling app_main()[0m
+[0;32mI (525) FIRE_ALARM: [0m
+[0;32mI (525) FIRE_ALARM: ╔═══════════════════════════════════════════════╗[0m
+[0;32mI (535) FIRE_ALARM: ║          SMART FIRE DETECTION SYSTEM          ║[0m
+[0;32mI (535) FIRE_ALARM: ║   ESP32 + MQ135 + PIR + Solar + Web Control   ║[0m
+[0;32mI (545) FIRE_ALARM: ╚═══════════════════════════════════════════════╝[0m
+[0;32mI (555) FIRE_ALARM: [0m
+[0;32mI (565) FIRE_ALARM: ✓ I2C initialized[0m
+[0;32mI (565) FIRE_ALARM: ✓ ADC1 unit initialized[0m
+[0;32mI (565) FIRE_ALARM: [0m
+[0;32mI (575) FIRE_ALARM: Initializing peripherals...[0m
+[0;32mI (585) FIRE_ALARM: ✓ OLED display[0m
+[0;32mI (585) MQ135: ✓ ADC calibration: Line Fitting Scheme[0m
+[0;32mI (585) MQ135: ✓ MQ135 Smoke Detector initialized on GPIO34[0m
+[0;32mI (585) BUZZER: Active buzzer initialized on GPIO23[0m
+[0;32mI (595) BATTERY:   Battery monitor calibrated[0m
+[0;32mI (595) BATTERY:   Battery monitor initialized on GPIO35[0m
+[0;32mI (605) BATTERY:   Voltage divider: 3.3kΩ + 1kΩ (ratio: 4.3)[0m
+[0;32mI (605) PIR: PIR sensor initialized on GPIO18[0m
+[0;32mI (615) FIRE_ALARM: [0m
+[0;32mI (615) FIRE_ALARM: Starting web dashboard...[0m
+[0;32mI (615) DASHBOARD: Fan GPIO25 and LED GPIO26 initialized[0m
+[0;32mI (665) wifi:wifi driver task: 3ffc09b0, prio:23, stack:6656, core=0[0m
+[0;32mI (675) wifi:wifi firmware version: 5984c42[0m
+[0;32mI (675) wifi:wifi certification version: v7.0[0m
+[0;32mI (675) wifi:config NVS flash: enabled[0m
+[0;32mI (675) wifi:config nano formatting: disabled[0m
+[0;32mI (675) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (685) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (685) wifi:Init management short buffer num: 32[0m
+[0;32mI (695) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (695) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (705) wifi:Init static rx buffer num: 10[0m
+[0;32mI (705) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (705) wifi_init: rx ba win: 6[0m
+[0;32mI (715) wifi_init: accept mbox: 6[0m
+[0;32mI (715) wifi_init: tcpip mbox: 32[0m
+[0;32mI (715) wifi_init: udp mbox: 6[0m
+[0;32mI (725) wifi_init: tcp mbox: 6[0m
+[0;32mI (725) wifi_init: tcp tx win: 5760[0m
+[0;32mI (725) wifi_init: tcp rx win: 5760[0m
+[0;32mI (725) wifi_init: tcp mss: 1440[0m
+[0;32mI (735) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (735) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (745) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (745) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (835) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (855) wifi:mode : sta (2c:bc:bb:4c:7b:3c)[0m
+[0;32mI (855) wifi:enable tsf[0m
+[0;32mI (855) DASHBOARD: Connecting to WiFi SSID: shunya[0m
+[0;32mI (865) DASHBOARD: Web server started[0m
+[0;32mI (3275) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (4165) FIRE_ALARM: [0m
+[0;32mI (4165) FIRE_ALARM: Warming up MQ135 sensor (60 seconds)...[0m
+[0;32mI (4165) FIRE_ALARM:   Countdown: 60 seconds...[0m
+[0;32mI (5685) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (8105) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (10515) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (12935) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (14165) FIRE_ALARM:   Countdown: 50 seconds...[0m
+[0;32mI (15345) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (17765) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (20175) DASHBOARD: WiFi disconnected, retrying...[0m
+[0;32mI (22595) DASHBOARD: WiFi disconnected, retrying...[0m
+�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|p�p�|�| p�� �� p����p��| p�|�����������|p�� �p|����p|pp|����� ���p�� ||p�� ��p�|�| p�� ��  p|�|��� ppp|p p p p�p�pppp��p��p�p|�|���p�pp��� ppp��p����p���p||�p|p�p�p��pp|p p ppp�pppp��p��p�p|�|��p�����|p p ppp�pppp�� �ppp�pp��pp �|�|�|������p|��p��| p��p��ppp�p�p��pp�|��|� �|p p pp�p�pppp�� �ppp�pp��pp���p������p��� �����|p p p|p�p�p�pppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p p�|pp�p�pppp��pp���pp�|�pp|p p p�|pp�p�pppp��pp���pp�|�pp�� ��|�p|��p�p|���p�p�pp��||�|pp�| pp�����|�|�����pp��� p p p�|pp�p�pppp��pp���pp�|�pppp �|��|����|��|ppp| pp�����|�|������� p p p�|�||p�pppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p p p�p�p�pppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p ppp�p|ppppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p pp�p�pp�pppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p pp|pp�p�pppp��pp���pp�|�pppp �|��|����|��|ppp�ppp�����|�|������� p p pp�p�p�p�pppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p pp| p�p�pppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p pppp�p�p�pppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p ppp�p|�|ppppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p ppp|pp�p�pppp��pp���pp�|�pppp �|��|����|��|ppp| pp�����|�|������� p p ppp�pp�p�pppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p ppp|�|�|ppppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p ppp�ppp�pppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p p|p�p�pp�pppp�� �ppp�pp��pp��p��pp��p�����|�|�|������� p�������p|����� p p� �p� �p� �p� �p� �p� �p� �p� �p� �p� �p� �p� �p� �p� �p� �p� �p� �p� �p���� p p p�|�|�| p��pp���pp�|�pp|p p p�|�|�| p��pp���pp�|�pp���|� pp�p pp||���p� ||p���|p p p�|�|�| p��pp���pp�|�pp���|� p �� ��pp�||��pp||���p� ||p���|p p p�|�|�| p��pp���pp�|�pp|p p p�|�|�| p��pp���pp�|�ppp||���p� ||p�p|��p���p|���� ||��� p p p�| p�pppp��pp���pp�|�pp���|� pp�p���p��p��|���|p p p�| p�pppp|���p�p�p�pp���|� p �� p�� ||p�� ��p�|�|pppp|�|��p��p���p|��pp��|���|��|p p p�| p�pppp|���p�p�p�pp���|� p|���p�p�ppp�|�|||��p��������|ppp||���p� ||p��p|�| p��p�p|p|� p p p�| p�pppp ���p�p���p�pp ����p��p�������pp||���p� ||p��p|�| p��p�ppp�p|p p p�|p�pppp � ���p���ppppp � ������p|�|�||���|pp�� ||p�� ����|p p p�|p�pppp � ���p���ppppp � ������p|�|�||���|ppp||���p� ||p��p|�| p��p�p|p�p|p p p�| p�pppp � ���p���ppppp��|�|��� ���p��p��p����pp�p|p��� p�pp�p��� pp� ��p�|ppp|�|ppp|p p p�| p�pppp�pp�ppp�pp� p��||�|ppp||���p� ||p��p|�| p��p�ppp|p p p�|p�pppp��pp���pp�|�pp|p p p�|p�pppp��pp���pp�|�ppp�� ���p|��p���p�� ��|p�|����� p p p�|p�pppp�� �ppp�pp��pp�� | p��p�ppp�pp |��pp���p��p�ppp| pp||���p� ||p���|p p p�|�|�| p��p��p�p��p��pp���p���p�� �����pp�p����p�p�p p��p�|pp�p�p p��� �����p|�|�|�|� p��|p���pp|p p p�|�|�| p��p��p�p��p��pp��p��|��� ��p������p�|�|ppp�p�pp|||pp|p p p�|�|�| p��p��p�p��p��pp�����p��p��� ��p�|�| p������p�|�|ppp��|� p|p p p�|�|�| p��p��p�p��|�|���p��pp���pp�|��|ppp|�|����|p p p�|�|�| p��p��p�p��|�|���p��p||�| p��|p�|� ���p|���pp��p��� �|����|p p p�|�|�| p��p��p�pp||��p�� �� p��� �|�p���|�|�p�

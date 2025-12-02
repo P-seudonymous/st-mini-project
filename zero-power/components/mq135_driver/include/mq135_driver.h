@@ -12,12 +12,20 @@
 #define MQ135_ADC_CHANNEL   ADC_CHANNEL_6  // GPIO34
 #define MQ135_ADC_ATTEN     ADC_ATTEN_DB_12
 #define MQ135_ADC_WIDTH     ADC_BITWIDTH_12
-#define RL_VALUE            10.0            // Load resistance in kOhm
+
+// MQ135 sensor constants
+#define MQ135_RL            10.0f   // Load resistance in kOhm
+#define MQ135_R0            10.0f   // Sensor resistance in clean air (calibrated value)
+#define MQ135_VC            5.0f    // Circuit voltage (5V typically)
+
+// Curve fitting constants for smoke/CO2 (adjust based on datasheet)
+#define MQ135_A             116.6020682f
+#define MQ135_B             -2.769034857f
 
 // Smoke detection thresholds (PPM)
-#define SMOKE_THRESHOLD_LOW     800   // Detectable smoke
-#define SMOKE_THRESHOLD_MEDIUM  1500  // Moderate smoke - warning
-#define SMOKE_THRESHOLD_HIGH    2500  // Heavy smoke - fire likely
+#define MQ135_DETECTION_THRESHOLD   800   // Detectable smoke
+#define MQ135_WARNING_THRESHOLD     1500  // Moderate smoke - warning
+#define MQ135_FIRE_THRESHOLD        2500  // Heavy smoke - fire likely
 
 // Smoke detection status
 typedef enum {
@@ -27,15 +35,15 @@ typedef enum {
     SMOKE_FIRE_ALERT
 } smoke_level_t;
 
-// Function prototypes
-esp_err_t mq135_init(void);
-void mq135_deinit(void);
-uint32_t mq135_get_raw_adc(void);
-float mq135_get_voltage(void);
-float mq135_get_ppm(void);
-smoke_level_t mq135_get_smoke_level(void);
-bool mq135_is_smoke_detected(void);
-const char* mq135_get_status_string(smoke_level_t level);
+// Function prototypes - ALL NOW TAKE adc_handle AS PARAMETER
+esp_err_t mq135_init(adc_oneshot_unit_handle_t adc_handle);
+void mq135_deinit(void);  // No ADC handle needed for cleanup
+uint32_t mq135_get_raw_adc(adc_oneshot_unit_handle_t adc_handle);
+float mq135_get_voltage(adc_oneshot_unit_handle_t adc_handle);
+float mq135_get_ppm(adc_oneshot_unit_handle_t adc_handle);
+smoke_level_t mq135_get_smoke_level(adc_oneshot_unit_handle_t adc_handle);
+bool mq135_is_smoke_detected(adc_oneshot_unit_handle_t adc_handle);
+const char* mq135_get_status_string(smoke_level_t level);  // No ADC handle needed (just string conversion)
 
 #endif
 

@@ -1,0 +1,31 @@
+Command: ninja all
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/pseudonymous/st-mini-project/zero-power/build/bootloader && /home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python /home/pseudonymous/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/pseudonymous/st-mini-project/zero-power/build/bootloader/bootloader.bin
+Bootloader binary size 0x6690 bytes. 0x970 bytes (8%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/display_driver/CMakeFiles/__idf_display_driver.dir/display_driver.c.obj
+/home/pseudonymous/st-mini-project/zero-power/components/display_driver/display_driver.c: In function 'display_init':
+/home/pseudonymous/st-mini-project/zero-power/components/display_driver/display_driver.c:37:5: warning: 'ssd1306_create' is deprecated: This driver is DEPRECATED. Please use updated SSD1306 driver from ESP-IDF. [-Wdeprecated-declarations]
+   37 |     ssd1306_dev = ssd1306_create(I2C_NUM_0, DISPLAY_I2C_ADDR);
+      |     ^~~~~~~~~~~
+In file included from /home/pseudonymous/st-mini-project/zero-power/components/display_driver/display_driver.c:2:
+/home/pseudonymous/st-mini-project/zero-power/managed_components/espressif__ssd1306/include/ssd1306.h:53:18: note: declared here
+   53 | ssd1306_handle_t ssd1306_create(i2c_port_t port, uint16_t dev_addr)
+      |                  ^~~~~~~~~~~~~~
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[6/11] Linking C static library esp-idf/display_driver/libdisplay_driver.a
+[7/11] Linking C static library esp-idf/main/libmain.a
+[8/11] Generating esp-idf/esp_system/ld/sections.ld
+[9/11] Linking CXX executable zero-power.elf
+[10/11] Generating binary image from built executable
+Warning: Deprecated: Option '--flash_mode' is deprecated. Use '--flash-mode' instead.
+Warning: Deprecated: Option '--flash_freq' is deprecated. Use '--flash-freq' instead.
+Warning: Deprecated: Option '--flash_size' is deprecated. Use '--flash-size' instead.
+esptool v5.1.0
+Creating ESP32 image...
+Merged 2 ELF sections.
+Successfully created ESP32 image.
+Generated /home/pseudonymous/st-mini-project/zero-power/build/zero-power.bin
+[11/11] cd /home/pseudonymous/st-mini-project/zero-power/build && /home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python /home/pseudonymous/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/pseudonymous/st-mini-project/zero-power/build/partition_table/partition-table.bin /home/pseudonymous/st-mini-project/zero-power/build/zero-power.bin
+zero-power.bin binary size 0x35c40 bytes. Smallest app partition is 0x100000 bytes. 0xca3c0 bytes (79%) free.

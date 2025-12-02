@@ -123,6 +123,10 @@
 		"/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/wifi_provisioning/cmake_install.cmake",
 		"/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/mq135_driver/cmake_install.cmake",
 		"/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/buzzer_driver/cmake_install.cmake",
+		"/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/battery_monitor/cmake_install.cmake",
+		"/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/pir_sensor/cmake_install.cmake",
+		"/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/web_dashboard/cmake_install.cmake",
+		"/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/espressif__ssd1306/cmake_install.cmake",
 		"/home/pseudonymous/st-mini-project/zero-power/build/esp-idf/main/cmake_install.cmake"
 	],
 	"Parallel" : false

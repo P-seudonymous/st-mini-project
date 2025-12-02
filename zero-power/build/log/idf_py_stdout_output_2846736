@@ -1,0 +1,1706 @@
+Command: /home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python /home/pseudonymous/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/pseudonymous/st-mini-project/zero-power/build/zero-power.elf /home/pseudonymous/st-mini-project/zero-power/build/bootloader/bootloader.elf -m '/home/pseudonymous/.espressif/python_env/idf6.0_py3.13_env/bin/python' '/home/pseudonymous/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15920
+ho 0 tail 12 room 4
+load:0x40080400,len:3880
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-1489-g4e036983a7 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  9 2025 07:13:04[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0cc60h ( 52320) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001cc88 vaddr=3ffb0000 size=02634h (  9780) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=0001f2c4 vaddr=40080000 size=00d54h (  3412) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1842ch ( 99372) map[0m
+[0;32mI (155) esp_image: segment 4: paddr=00038454 vaddr=40080d54 size=0d798h ( 55192) load[0m
+[0;32mI (177) esp_image: segment 5: paddr=00045bf4 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (185) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (208) app_init: Application information:[0m
+[0;32mI (212) app_init: Project name:     zero-power[0m
+[0;32mI (216) app_init: App version:      05e81c6-dirty[0m
+[0;32mI (220) app_init: Compile time:     Oct  9 2025 15:10:22[0m
+[0;32mI (225) app_init: ELF file SHA256:  d33544493...[0m
+[0;32mI (230) app_init: ESP-IDF:          v6.0-dev-1489-g4e036983a7[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (239) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (243) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (258) heap_init: At 3FFB2F30 len 0002D0D0 (180 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (269) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 4008E4EC len 00011B14 (70 KiB): IRAM[0m
+[0;32mI (281) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (286) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (298) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (309) main_task: Started on CPU0[0m
+[0;32mI (319) main_task: Calling app_main()[0m
+[0;32mI (319) FIRE_ALARM: [0m
+[0;32mI (319) FIRE_ALARM: ╔═══════════════════════════════════════════════╗[0m
+[0;32mI (329) FIRE_ALARM: ║              FIRE DETECTION SYSTEM            ║[0m
+[0;32mI (329) FIRE_ALARM: ║       ESP32 + MQ135 + Battery Monitor + OLED  ║[0m
+[0;32mI (339) FIRE_ALARM: ╚═══════════════════════════════════════════════╝[0m
+[0;32mI (359) FIRE_ALARM: [0m
+[0;32mI (359) FIRE_ALARM: ADC1 unit initialized[0m
+[0;32mI (359) FIRE_ALARM: [0m
+[0;32mI (359) FIRE_ALARM: Initializing peripherals...[0m
+[0;32mI (369) DISPLAY: Initializing SSD1306 OLED display[0m
+[0;32mI (25369) DISPLAY: ✓ Display initialized (128x64 OLED)[0m
+[0;32mI (25369) MQ135: ✓ ADC calibration: Line Fitting Scheme[0m
+[0;32mI (25369) MQ135: ✓ MQ135 Smoke Detector initialized on GPIO34[0m
+[0;32mI (25369) BUZZER: Active buzzer initialized on GPIO23[0m
+[0;32mI (25369) BATTERY:   Battery monitor calibrated[0m
+[0;32mI (25379) BATTERY:   Battery monitor initialized on GPIO35[0m
+[0;32mI (25379) BATTERY:   Voltage divider: 3.3kΩ + 1kΩ (ratio: 4.3)[0m
+[0;32mI (28689) FIRE_ALARM: [0m
+[0;32mI (28689) FIRE_ALARM: Warming up MQ135 sensor...[0m
+[0;32mI (28689) FIRE_ALARM: Please wait 60 seconds for stabilization[0m
+[0;32mI (28689) FIRE_ALARM: Countdown: 60 seconds...[0m
+[0;32mI (38689) FIRE_ALARM: Countdown: 50 seconds...[0m
+[0;32mI (48689) FIRE_ALARM: Countdown: 40 seconds...[0m
+[0;32mI (58689) FIRE_ALARM: Countdown: 30 seconds...[0m
+[0;32mI (68689) FIRE_ALARM: Countdown: 20 seconds...[0m
+[0;32mI (78689) FIRE_ALARM: Countdown: 10 seconds...[0m
+[0;32mI (83689) FIRE_ALARM: Countdown: 5 seconds...[0m
+[0;32mI (84689) FIRE_ALARM: Countdown: 4 seconds...[0m
+[0;32mI (85689) FIRE_ALARM: Countdown: 3 seconds...[0m
+[0;32mI (86689) FIRE_ALARM: Countdown: 2 seconds...[0m
+[0;32mI (87689) FIRE_ALARM: Countdown: 1 seconds...[0m
+[0;32mI (88689) FIRE_ALARM: [0m
+[0;32mI (88689) FIRE_ALARM: System ready! Monitoring started.[0m
+[0;32mI (88689) FIRE_ALARM: [0m
+[0;32mI (89239) FIRE_ALARM: ╔════════════════════════════════════════════╗[0m
+[0;32mI (89239) FIRE_ALARM: ║        CONTINUOUS MONITORING ACTIVE        ║[0m
+[0;32mI (89239) FIRE_ALARM: ╚════════════════════════════════════════════╝[0m
+[0;32mI (89259) FIRE_ALARM: [0m
+[0;32mI (90269) FIRE_ALARM: [0m
+[0;32mI (90269) FIRE_ALARM: ━━━━━━━━━━ Reading #1 ━━━━━━━━━━[0m
+[0;32mI (90269) FIRE_ALARM: [0m
+[0;32mI (90269) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (90269) FIRE_ALARM:      PPM Value    : 36[0m
+[0;32mI (90269) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (90279) FIRE_ALARM: [0m
+[0;32mI (90279) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (90279) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (90289) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (90289) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (90299) FIRE_ALARM: [0m
+[0;32mI (90299) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (90309) FIRE_ALARM: [0m
+[0;32mI (94319) FIRE_ALARM: [0m
+[0;32mI (94319) FIRE_ALARM: ━━━━━━━━━━ Reading #2 ━━━━━━━━━━[0m
+[0;32mI (94319) FIRE_ALARM: [0m
+[0;32mI (94319) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (94319) FIRE_ALARM:      PPM Value    : 23[0m
+[0;32mI (94319) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (94329) FIRE_ALARM: [0m
+[0;32mI (94329) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (94329) FIRE_ALARM:      Percentage   : 72%[0m
+[0;32mI (94339) FIRE_ALARM:      Voltage      : 3.88V[0m
+[0;32mI (94339) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (94349) FIRE_ALARM: [0m
+[0;32mI (94349) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (94359) FIRE_ALARM: [0m
+[0;32mI (98369) FIRE_ALARM: [0m
+[0;32mI (98369) FIRE_ALARM: ━━━━━━━━━━ Reading #3 ━━━━━━━━━━[0m
+[0;32mI (98369) FIRE_ALARM: [0m
+[0;32mI (98369) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (98369) FIRE_ALARM:      PPM Value    : 72[0m
+[0;32mI (98369) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (98379) FIRE_ALARM: [0m
+[0;32mI (98379) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (98379) FIRE_ALARM:      Percentage   : 34%[0m
+[0;32mI (98389) FIRE_ALARM:      Voltage      : 3.48V[0m
+[0;32mI (98389) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (98399) FIRE_ALARM: [0m
+[0;32mI (98399) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (98409) FIRE_ALARM: [0m
+[0;32mI (102419) FIRE_ALARM: [0m
+[0;32mI (102419) FIRE_ALARM: ━━━━━━━━━━ Reading #4 ━━━━━━━━━━[0m
+[0;32mI (102419) FIRE_ALARM: [0m
+[0;32mI (102419) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (102419) FIRE_ALARM:      PPM Value    : 17[0m
+[0;32mI (102419) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (102429) FIRE_ALARM: [0m
+[0;32mI (102429) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (102429) FIRE_ALARM:      Percentage   : 62%[0m
+[0;32mI (102439) FIRE_ALARM:      Voltage      : 3.78V[0m
+[0;32mI (102439) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (102449) FIRE_ALARM: [0m
+[0;32mI (102449) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (102459) FIRE_ALARM: [0m
+[0;32mI (106469) FIRE_ALARM: [0m
+[0;32mI (106469) FIRE_ALARM: ━━━━━━━━━━ Reading #5 ━━━━━━━━━━[0m
+[0;32mI (106469) FIRE_ALARM: [0m
+[0;32mI (106469) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (106469) FIRE_ALARM:      PPM Value    : 82[0m
+[0;32mI (106469) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (106479) FIRE_ALARM: [0m
+[0;32mI (106479) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (106479) FIRE_ALARM:      Percentage   : 59%[0m
+[0;32mI (106489) FIRE_ALARM:      Voltage      : 3.72V[0m
+[0;32mI (106489) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (106499) FIRE_ALARM: [0m
+[0;32mI (106499) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (106509) FIRE_ALARM: [0m
+[0;32mI (110519) FIRE_ALARM: [0m
+[0;32mI (110519) FIRE_ALARM: ━━━━━━━━━━ Reading #6 ━━━━━━━━━━[0m
+[0;32mI (110519) FIRE_ALARM: [0m
+[0;32mI (110519) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (110519) FIRE_ALARM:      PPM Value    : 58[0m
+[0;32mI (110519) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (110529) FIRE_ALARM: [0m
+[0;32mI (110529) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (110529) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (110539) FIRE_ALARM:      Voltage      : 2.84V[0m
+[0;32mI (110539) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (110549) FIRE_ALARM: [0m
+[0;32mI (110549) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (110559) FIRE_ALARM: [0m
+[0;33mW (110559) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (110569) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (114579) FIRE_ALARM: [0m
+[0;32mI (114579) FIRE_ALARM: ━━━━━━━━━━ Reading #7 ━━━━━━━━━━[0m
+[0;32mI (114579) FIRE_ALARM: [0m
+[0;32mI (114579) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (114579) FIRE_ALARM:      PPM Value    : 40[0m
+[0;32mI (114579) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (114589) FIRE_ALARM: [0m
+[0;32mI (114589) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (114589) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (114599) FIRE_ALARM:      Voltage      : 2.34V[0m
+[0;32mI (114599) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (114609) FIRE_ALARM: [0m
+[0;32mI (114609) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (114619) FIRE_ALARM: [0m
+[0;33mW (114619) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (114629) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (118639) FIRE_ALARM: [0m
+[0;32mI (118639) FIRE_ALARM: ━━━━━━━━━━ Reading #8 ━━━━━━━━━━[0m
+[0;32mI (118639) FIRE_ALARM: [0m
+[0;32mI (118639) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (118639) FIRE_ALARM:      PPM Value    : 29[0m
+[0;32mI (118639) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (118649) FIRE_ALARM: [0m
+[0;32mI (118649) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (118649) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (118659) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (118659) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (118669) FIRE_ALARM: [0m
+[0;32mI (118669) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (118679) FIRE_ALARM: [0m
+[0;32mI (122689) FIRE_ALARM: [0m
+[0;32mI (122689) FIRE_ALARM: ━━━━━━━━━━ Reading #9 ━━━━━━━━━━[0m
+[0;32mI (122689) FIRE_ALARM: [0m
+[0;32mI (122689) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (122689) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (122689) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (122699) FIRE_ALARM: [0m
+[0;32mI (122699) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (122699) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (122709) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (122709) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (122719) FIRE_ALARM: [0m
+[0;32mI (122719) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (122729) FIRE_ALARM: [0m
+[0;32mI (126739) FIRE_ALARM: [0m
+[0;32mI (126739) FIRE_ALARM: ━━━━━━━━━━ Reading #10 ━━━━━━━━━━[0m
+[0;32mI (126739) FIRE_ALARM: [0m
+[0;32mI (126739) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (126739) FIRE_ALARM:      PPM Value    : 39[0m
+[0;32mI (126739) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (126749) FIRE_ALARM: [0m
+[0;32mI (126749) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (126749) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (126759) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (126759) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (126769) FIRE_ALARM: [0m
+[0;32mI (126769) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (126779) FIRE_ALARM: [0m
+[0;32mI (130789) FIRE_ALARM: [0m
+[0;32mI (130789) FIRE_ALARM: ━━━━━━━━━━ Reading #11 ━━━━━━━━━━[0m
+[0;32mI (130789) FIRE_ALARM: [0m
+[0;32mI (130789) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (130789) FIRE_ALARM:      PPM Value    : 19[0m
+[0;32mI (130789) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (130799) FIRE_ALARM: [0m
+[0;32mI (130799) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (130799) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (130809) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (130809) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (130819) FIRE_ALARM: [0m
+[0;32mI (130819) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (130829) FIRE_ALARM: [0m
+[0;32mI (134839) FIRE_ALARM: [0m
+[0;32mI (134839) FIRE_ALARM: ━━━━━━━━━━ Reading #12 ━━━━━━━━━━[0m
+[0;32mI (134839) FIRE_ALARM: [0m
+[0;32mI (134839) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (134839) FIRE_ALARM:      PPM Value    : 78[0m
+[0;32mI (134839) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (134849) FIRE_ALARM: [0m
+[0;32mI (134849) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (134849) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (134859) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (134859) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (134869) FIRE_ALARM: [0m
+[0;32mI (134869) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (134879) FIRE_ALARM: [0m
+[0;32mI (138889) FIRE_ALARM: [0m
+[0;32mI (138889) FIRE_ALARM: ━━━━━━━━━━ Reading #13 ━━━━━━━━━━[0m
+[0;32mI (138889) FIRE_ALARM: [0m
+[0;32mI (138889) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (138889) FIRE_ALARM:      PPM Value    : 70[0m
+[0;32mI (138889) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (138899) FIRE_ALARM: [0m
+[0;32mI (138899) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (138899) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (138909) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (138909) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (138919) FIRE_ALARM: [0m
+[0;32mI (138919) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (138929) FIRE_ALARM: [0m
+[0;32mI (142939) FIRE_ALARM: [0m
+[0;32mI (142939) FIRE_ALARM: ━━━━━━━━━━ Reading #14 ━━━━━━━━━━[0m
+[0;32mI (142939) FIRE_ALARM: [0m
+[0;32mI (142939) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (142939) FIRE_ALARM:      PPM Value    : 2927[0m
+[0;32mI (142949) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (142949) FIRE_ALARM: [0m
+[0;32mI (142949) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (142949) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (142959) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (142959) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (142969) FIRE_ALARM: [0m
+[0;32mI (142969) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (142979) FIRE_ALARM: [0m
+[0;32mI (146989) FIRE_ALARM: [0m
+[0;32mI (146989) FIRE_ALARM: ━━━━━━━━━━ Reading #15 ━━━━━━━━━━[0m
+[0;32mI (146989) FIRE_ALARM: [0m
+[0;32mI (146989) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (146989) FIRE_ALARM:      PPM Value    : 116[0m
+[0;32mI (146989) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (146999) FIRE_ALARM: [0m
+[0;32mI (146999) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (146999) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (147009) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (147009) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (147019) FIRE_ALARM: [0m
+[0;32mI (147019) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (147029) FIRE_ALARM: [0m
+[0;32mI (151039) FIRE_ALARM: [0m
+[0;32mI (151039) FIRE_ALARM: ━━━━━━━━━━ Reading #16 ━━━━━━━━━━[0m
+[0;32mI (151039) FIRE_ALARM: [0m
+[0;32mI (151039) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (151039) FIRE_ALARM:      PPM Value    : 120[0m
+[0;32mI (151039) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (151049) FIRE_ALARM: [0m
+[0;32mI (151049) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (151049) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (151059) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (151059) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (151069) FIRE_ALARM: [0m
+[0;32mI (151069) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (151079) FIRE_ALARM: [0m
+[0;32mI (155089) FIRE_ALARM: [0m
+[0;32mI (155089) FIRE_ALARM: ━━━━━━━━━━ Reading #17 ━━━━━━━━━━[0m
+[0;32mI (155089) FIRE_ALARM: [0m
+[0;32mI (155089) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (155089) FIRE_ALARM:      PPM Value    : 165[0m
+[0;32mI (155089) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (155099) FIRE_ALARM: [0m
+[0;32mI (155099) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (155099) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (155109) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (155109) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (155119) FIRE_ALARM: [0m
+[0;32mI (155119) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (155129) FIRE_ALARM: [0m
+[0;32mI (159139) FIRE_ALARM: [0m
+[0;32mI (159139) FIRE_ALARM: ━━━━━━━━━━ Reading #18 ━━━━━━━━━━[0m
+[0;32mI (159139) FIRE_ALARM: [0m
+[0;32mI (159139) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (159139) FIRE_ALARM:      PPM Value    : 103[0m
+[0;32mI (159139) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (159149) FIRE_ALARM: [0m
+[0;32mI (159149) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (159149) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (159159) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (159159) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (159169) FIRE_ALARM: [0m
+[0;32mI (159169) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (159179) FIRE_ALARM: [0m
+[0;32mI (163189) FIRE_ALARM: [0m
+[0;32mI (163189) FIRE_ALARM: ━━━━━━━━━━ Reading #19 ━━━━━━━━━━[0m
+[0;32mI (163189) FIRE_ALARM: [0m
+[0;32mI (163189) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (163189) FIRE_ALARM:      PPM Value    : 111[0m
+[0;32mI (163189) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (163199) FIRE_ALARM: [0m
+[0;32mI (163199) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (163199) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (163209) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (163209) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (163219) FIRE_ALARM: [0m
+[0;32mI (163219) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (163229) FIRE_ALARM: [0m
+[0;32mI (167239) FIRE_ALARM: [0m
+[0;32mI (167239) FIRE_ALARM: ━━━━━━━━━━ Reading #20 ━━━━━━━━━━[0m
+[0;32mI (167239) FIRE_ALARM: [0m
+[0;32mI (167239) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (167239) FIRE_ALARM:      PPM Value    : 86[0m
+[0;32mI (167239) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (167249) FIRE_ALARM: [0m
+[0;32mI (167249) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (167249) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (167259) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (167259) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (167269) FIRE_ALARM: [0m
+[0;32mI (167269) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (167279) FIRE_ALARM: [0m
+[0;32mI (171289) FIRE_ALARM: [0m
+[0;32mI (171289) FIRE_ALARM: ━━━━━━━━━━ Reading #21 ━━━━━━━━━━[0m
+[0;32mI (171289) FIRE_ALARM: [0m
+[0;32mI (171289) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (171289) FIRE_ALARM:      PPM Value    : 80[0m
+[0;32mI (171289) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (171299) FIRE_ALARM: [0m
+[0;32mI (171299) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (171299) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (171309) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (171309) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (171319) FIRE_ALARM: [0m
+[0;32mI (171319) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (171329) FIRE_ALARM: [0m
+[0;32mI (175339) FIRE_ALARM: [0m
+[0;32mI (175339) FIRE_ALARM: ━━━━━━━━━━ Reading #22 ━━━━━━━━━━[0m
+[0;32mI (175339) FIRE_ALARM: [0m
+[0;32mI (175339) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (175339) FIRE_ALARM:      PPM Value    : 84[0m
+[0;32mI (175339) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (175349) FIRE_ALARM: [0m
+[0;32mI (175349) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (175349) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (175359) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (175359) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (175369) FIRE_ALARM: [0m
+[0;32mI (175369) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (175379) FIRE_ALARM: [0m
+[0;32mI (179389) FIRE_ALARM: [0m
+[0;32mI (179389) FIRE_ALARM: ━━━━━━━━━━ Reading #23 ━━━━━━━━━━[0m
+[0;32mI (179389) FIRE_ALARM: [0m
+[0;32mI (179389) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (179389) FIRE_ALARM:      PPM Value    : 192[0m
+[0;32mI (179389) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (179399) FIRE_ALARM: [0m
+[0;32mI (179399) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (179399) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (179409) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (179409) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (179419) FIRE_ALARM: [0m
+[0;32mI (179419) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (179429) FIRE_ALARM: [0m
+[0;32mI (183439) FIRE_ALARM: [0m
+[0;32mI (183439) FIRE_ALARM: ━━━━━━━━━━ Reading #24 ━━━━━━━━━━[0m
+[0;32mI (183439) FIRE_ALARM: [0m
+[0;32mI (183439) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (183439) FIRE_ALARM:      PPM Value    : 156[0m
+[0;32mI (183439) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (183449) FIRE_ALARM: [0m
+[0;32mI (183449) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (183449) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (183459) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (183459) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (183469) FIRE_ALARM: [0m
+[0;32mI (183469) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (183479) FIRE_ALARM: [0m
+[0;32mI (187489) FIRE_ALARM: [0m
+[0;32mI (187489) FIRE_ALARM: ━━━━━━━━━━ Reading #25 ━━━━━━━━━━[0m
+[0;32mI (187489) FIRE_ALARM: [0m
+[0;32mI (187489) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (187489) FIRE_ALARM:      PPM Value    : 5[0m
+[0;32mI (187489) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (187499) FIRE_ALARM: [0m
+[0;32mI (187499) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (187499) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (187509) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (187509) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (187519) FIRE_ALARM: [0m
+[0;32mI (187519) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (187529) FIRE_ALARM: [0m
+[0;32mI (191539) FIRE_ALARM: [0m
+[0;32mI (191539) FIRE_ALARM: ━━━━━━━━━━ Reading #26 ━━━━━━━━━━[0m
+[0;32mI (191539) FIRE_ALARM: [0m
+[0;32mI (191539) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (191539) FIRE_ALARM:      PPM Value    : 61[0m
+[0;32mI (191539) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (191549) FIRE_ALARM: [0m
+[0;32mI (191549) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (191549) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (191559) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (191559) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (191569) FIRE_ALARM: [0m
+[0;32mI (191569) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (191579) FIRE_ALARM: [0m
+[0;32mI (195589) FIRE_ALARM: [0m
+[0;32mI (195589) FIRE_ALARM: ━━━━━━━━━━ Reading #27 ━━━━━━━━━━[0m
+[0;32mI (195589) FIRE_ALARM: [0m
+[0;32mI (195589) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (195589) FIRE_ALARM:      PPM Value    : 18[0m
+[0;32mI (195589) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (195599) FIRE_ALARM: [0m
+[0;32mI (195599) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (195599) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (195609) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (195609) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (195619) FIRE_ALARM: [0m
+[0;32mI (195619) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (195629) FIRE_ALARM: [0m
+[0;32mI (199639) FIRE_ALARM: [0m
+[0;32mI (199639) FIRE_ALARM: ━━━━━━━━━━ Reading #28 ━━━━━━━━━━[0m
+[0;32mI (199639) FIRE_ALARM: [0m
+[0;32mI (199639) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (199639) FIRE_ALARM:      PPM Value    : 120[0m
+[0;32mI (199639) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (199649) FIRE_ALARM: [0m
+[0;32mI (199649) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (199649) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (199659) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (199659) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (199669) FIRE_ALARM: [0m
+[0;32mI (199669) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (199679) FIRE_ALARM: [0m
+[0;32mI (203689) FIRE_ALARM: [0m
+[0;32mI (203689) FIRE_ALARM: ━━━━━━━━━━ Reading #29 ━━━━━━━━━━[0m
+[0;32mI (203689) FIRE_ALARM: [0m
+[0;32mI (203689) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (203689) FIRE_ALARM:      PPM Value    : 58[0m
+[0;32mI (203689) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (203699) FIRE_ALARM: [0m
+[0;32mI (203699) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (203699) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (203709) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (203709) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (203719) FIRE_ALARM: [0m
+[0;32mI (203719) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (203729) FIRE_ALARM: [0m
+[0;32mI (207739) FIRE_ALARM: [0m
+[0;32mI (207739) FIRE_ALARM: ━━━━━━━━━━ Reading #30 ━━━━━━━━━━[0m
+[0;32mI (207739) FIRE_ALARM: [0m
+[0;32mI (207739) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (207739) FIRE_ALARM:      PPM Value    : 39442[0m
+[0;32mI (207749) FIRE_ALARM:      Status       : FIRE ALERT[0m
+[0;32mI (207749) FIRE_ALARM: [0m
+[0;32mI (207749) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (207759) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (207759) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (207759) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (207769) FIRE_ALARM: [0m
+[0;32mI (207769) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (207779) FIRE_ALARM: [0m
+[0;33mW (207779) FIRE_ALARM: [0m
+[0;33mW (207789) FIRE_ALARM: ALARM ACTIVATED![0m
+[0;33mW (207789) FIRE_ALARM: [0m
+[1;31mE (207789) BUZZER: FIRE ALARM ACTIVATED![0m
+[0;32mI (213799) FIRE_ALARM: [0m
+[0;32mI (213799) FIRE_ALARM: ━━━━━━━━━━ Reading #31 ━━━━━━━━━━[0m
+[0;32mI (213799) FIRE_ALARM: [0m
+[0;32mI (213799) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (213799) FIRE_ALARM:      PPM Value    : 324[0m
+[0;32mI (213799) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (213809) FIRE_ALARM: [0m
+[0;32mI (213809) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (213809) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (213819) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (213819) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (213829) FIRE_ALARM: [0m
+[0;32mI (213829) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (213839) FIRE_ALARM: [0m
+[0;32mI (213839) FIRE_ALARM: [0m
+[0;32mI (213839) FIRE_ALARM: Air cleared - Alarm deactivated[0m
+[0;32mI (213849) FIRE_ALARM: [0m
+[0;32mI (218359) FIRE_ALARM: [0m
+[0;32mI (218359) FIRE_ALARM: ━━━━━━━━━━ Reading #32 ━━━━━━━━━━[0m
+[0;32mI (218359) FIRE_ALARM: [0m
+[0;32mI (218359) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (218359) FIRE_ALARM:      PPM Value    : 133[0m
+[0;32mI (218359) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (218369) FIRE_ALARM: [0m
+[0;32mI (218369) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (218369) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (218379) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (218379) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (218389) FIRE_ALARM: [0m
+[0;32mI (218389) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (218399) FIRE_ALARM: [0m
+[0;32mI (222409) FIRE_ALARM: [0m
+[0;32mI (222409) FIRE_ALARM: ━━━━━━━━━━ Reading #33 ━━━━━━━━━━[0m
+[0;32mI (222409) FIRE_ALARM: [0m
+[0;32mI (222409) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (222409) FIRE_ALARM:      PPM Value    : 550[0m
+[0;32mI (222409) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (222419) FIRE_ALARM: [0m
+[0;32mI (222419) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (222419) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (222429) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (222429) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (222439) FIRE_ALARM: [0m
+[0;32mI (222439) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (222449) FIRE_ALARM: [0m
+[0;32mI (226459) FIRE_ALARM: [0m
+[0;32mI (226459) FIRE_ALARM: ━━━━━━━━━━ Reading #34 ━━━━━━━━━━[0m
+[0;32mI (226459) FIRE_ALARM: [0m
+[0;32mI (226459) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (226459) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (226459) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (226469) FIRE_ALARM: [0m
+[0;32mI (226469) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (226469) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (226479) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (226479) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (226489) FIRE_ALARM: [0m
+[0;32mI (226489) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (226499) FIRE_ALARM: [0m
+[0;33mW (226499) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (226509) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (230519) FIRE_ALARM: [0m
+[0;32mI (230519) FIRE_ALARM: ━━━━━━━━━━ Reading #35 ━━━━━━━━━━[0m
+[0;32mI (230519) FIRE_ALARM: [0m
+[0;32mI (230519) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (230519) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (230519) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (230529) FIRE_ALARM: [0m
+[0;32mI (230529) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (230529) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (230539) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (230539) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (230549) FIRE_ALARM: [0m
+[0;32mI (230549) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (230559) FIRE_ALARM: [0m
+[0;33mW (230559) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (230569) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (234579) FIRE_ALARM: [0m
+[0;32mI (234579) FIRE_ALARM: ━━━━━━━━━━ Reading #36 ━━━━━━━━━━[0m
+[0;32mI (234579) FIRE_ALARM: [0m
+[0;32mI (234579) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (234579) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (234579) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (234589) FIRE_ALARM: [0m
+[0;32mI (234589) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (234589) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (234599) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (234599) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (234609) FIRE_ALARM: [0m
+[0;32mI (234609) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (234619) FIRE_ALARM: [0m
+[0;33mW (234619) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (234629) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (238639) FIRE_ALARM: [0m
+[0;32mI (238639) FIRE_ALARM: ━━━━━━━━━━ Reading #37 ━━━━━━━━━━[0m
+[0;32mI (238639) FIRE_ALARM: [0m
+[0;32mI (238639) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (238639) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (238639) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (238649) FIRE_ALARM: [0m
+[0;32mI (238649) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (238649) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (238659) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (238659) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (238669) FIRE_ALARM: [0m
+[0;32mI (238669) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (238679) FIRE_ALARM: [0m
+[0;33mW (238679) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (238689) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (242699) FIRE_ALARM: [0m
+[0;32mI (242699) FIRE_ALARM: ━━━━━━━━━━ Reading #38 ━━━━━━━━━━[0m
+[0;32mI (242699) FIRE_ALARM: [0m
+[0;32mI (242699) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (242699) FIRE_ALARM:      PPM Value    : 115[0m
+[0;32mI (242699) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (242709) FIRE_ALARM: [0m
+[0;32mI (242709) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (242709) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (242719) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (242719) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (242729) FIRE_ALARM: [0m
+[0;32mI (242729) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (242739) FIRE_ALARM: [0m
+[0;32mI (246749) FIRE_ALARM: [0m
+[0;32mI (246749) FIRE_ALARM: ━━━━━━━━━━ Reading #39 ━━━━━━━━━━[0m
+[0;32mI (246749) FIRE_ALARM: [0m
+[0;32mI (246749) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (246749) FIRE_ALARM:      PPM Value    : 81[0m
+[0;32mI (246749) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (246759) FIRE_ALARM: [0m
+[0;32mI (246759) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (246759) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (246769) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (246769) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (246779) FIRE_ALARM: [0m
+[0;32mI (246779) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (246789) FIRE_ALARM: [0m
+[0;32mI (250799) FIRE_ALARM: [0m
+[0;32mI (250799) FIRE_ALARM: ━━━━━━━━━━ Reading #40 ━━━━━━━━━━[0m
+[0;32mI (250799) FIRE_ALARM: [0m
+[0;32mI (250799) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (250799) FIRE_ALARM:      PPM Value    : 61[0m
+[0;32mI (250799) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (250809) FIRE_ALARM: [0m
+[0;32mI (250809) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (250809) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (250819) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (250819) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (250829) FIRE_ALARM: [0m
+[0;32mI (250829) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (250839) FIRE_ALARM: [0m
+[0;32mI (254849) FIRE_ALARM: [0m
+[0;32mI (254849) FIRE_ALARM: ━━━━━━━━━━ Reading #41 ━━━━━━━━━━[0m
+[0;32mI (254849) FIRE_ALARM: [0m
+[0;32mI (254849) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (254849) FIRE_ALARM:      PPM Value    : 71[0m
+[0;32mI (254849) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (254859) FIRE_ALARM: [0m
+[0;32mI (254859) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (254859) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (254869) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (254869) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (254879) FIRE_ALARM: [0m
+[0;32mI (254879) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (254889) FIRE_ALARM: [0m
+[0;32mI (257899) FIRE_ALARM: [0m
+[0;32mI (257899) FIRE_ALARM: ━━━━━━━━━━ Reading #42 ━━━━━━━━━━[0m
+[0;32mI (257899) FIRE_ALARM: [0m
+[0;32mI (257899) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (257899) FIRE_ALARM:      PPM Value    : 34[0m
+[0;32mI (257909) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (257909) FIRE_ALARM: [0m
+[0;32mI (257909) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (257919) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (257919) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (257919) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (257929) FIRE_ALARM: [0m
+[0;32mI (257929) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (257939) FIRE_ALARM: [0m
+[0;32mI (260949) FIRE_ALARM: [0m
+[0;32mI (260949) FIRE_ALARM: ━━━━━━━━━━ Reading #43 ━━━━━━━━━━[0m
+[0;32mI (260949) FIRE_ALARM: [0m
+[0;32mI (260949) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (260949) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (260959) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (260959) FIRE_ALARM: [0m
+[0;32mI (260959) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (260969) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (260969) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (260969) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (260979) FIRE_ALARM: [0m
+[0;32mI (260979) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (260989) FIRE_ALARM: [0m
+[0;33mW (260989) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (260999) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (264009) FIRE_ALARM: [0m
+[0;32mI (264009) FIRE_ALARM: ━━━━━━━━━━ Reading #44 ━━━━━━━━━━[0m
+[0;32mI (264009) FIRE_ALARM: [0m
+[0;32mI (264009) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (264009) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (264019) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (264019) FIRE_ALARM: [0m
+[0;32mI (264019) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (264029) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (264029) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (264029) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (264039) FIRE_ALARM: [0m
+[0;32mI (264039) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (264049) FIRE_ALARM: [0m
+[0;33mW (264049) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (264059) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (267069) FIRE_ALARM: [0m
+[0;32mI (267069) FIRE_ALARM: ━━━━━━━━━━ Reading #45 ━━━━━━━━━━[0m
+[0;32mI (267069) FIRE_ALARM: [0m
+[0;32mI (267069) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (267069) FIRE_ALARM:      PPM Value    : 6[0m
+[0;32mI (267079) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (267079) FIRE_ALARM: [0m
+[0;32mI (267079) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (267089) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (267089) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (267089) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (267099) FIRE_ALARM: [0m
+[0;32mI (267099) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (267109) FIRE_ALARM: [0m
+[0;33mW (267109) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (267119) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (270129) FIRE_ALARM: [0m
+[0;32mI (270129) FIRE_ALARM: ━━━━━━━━━━ Reading #46 ━━━━━━━━━━[0m
+[0;32mI (270129) FIRE_ALARM: [0m
+[0;32mI (270129) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (270129) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (270139) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (270139) FIRE_ALARM: [0m
+[0;32mI (270139) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (270149) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (270149) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (270149) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (270159) FIRE_ALARM: [0m
+[0;32mI (270159) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (270169) FIRE_ALARM: [0m
+[0;33mW (270169) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (270179) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (273189) FIRE_ALARM: [0m
+[0;32mI (273189) FIRE_ALARM: ━━━━━━━━━━ Reading #47 ━━━━━━━━━━[0m
+[0;32mI (273189) FIRE_ALARM: [0m
+[0;32mI (273189) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (273189) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (273199) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (273199) FIRE_ALARM: [0m
+[0;32mI (273199) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (273209) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (273209) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (273209) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (273219) FIRE_ALARM: [0m
+[0;32mI (273219) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (273229) FIRE_ALARM: [0m
+[0;33mW (273229) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (273239) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (276249) FIRE_ALARM: [0m
+[0;32mI (276249) FIRE_ALARM: ━━━━━━━━━━ Reading #48 ━━━━━━━━━━[0m
+[0;32mI (276249) FIRE_ALARM: [0m
+[0;32mI (276249) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (276249) FIRE_ALARM:      PPM Value    : 18[0m
+[0;32mI (276259) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (276259) FIRE_ALARM: [0m
+[0;32mI (276259) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (276269) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (276269) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (276269) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (276279) FIRE_ALARM: [0m
+[0;32mI (276279) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (276289) FIRE_ALARM: [0m
+[0;33mW (276289) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (276299) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (279309) FIRE_ALARM: [0m
+[0;32mI (279309) FIRE_ALARM: ━━━━━━━━━━ Reading #49 ━━━━━━━━━━[0m
+[0;32mI (279309) FIRE_ALARM: [0m
+[0;32mI (279309) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (279309) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (279319) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (279319) FIRE_ALARM: [0m
+[0;32mI (279319) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (279329) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (279329) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (279329) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (279339) FIRE_ALARM: [0m
+[0;32mI (279339) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (279349) FIRE_ALARM: [0m
+[0;33mW (279349) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (279359) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (282369) FIRE_ALARM: [0m
+[0;32mI (282369) FIRE_ALARM: ━━━━━━━━━━ Reading #50 ━━━━━━━━━━[0m
+[0;32mI (282369) FIRE_ALARM: [0m
+[0;32mI (282369) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (282369) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (282379) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (282379) FIRE_ALARM: [0m
+[0;32mI (282379) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (282389) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (282389) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (282389) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (282399) FIRE_ALARM: [0m
+[0;32mI (282399) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (282409) FIRE_ALARM: [0m
+[0;32mI (285419) FIRE_ALARM: [0m
+[0;32mI (285419) FIRE_ALARM: ━━━━━━━━━━ Reading #51 ━━━━━━━━━━[0m
+[0;32mI (285419) FIRE_ALARM: [0m
+[0;32mI (285419) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (285419) FIRE_ALARM:      PPM Value    : 120[0m
+[0;32mI (285429) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (285429) FIRE_ALARM: [0m
+[0;32mI (285429) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (285439) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (285439) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (285439) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (285449) FIRE_ALARM: [0m
+[0;32mI (285449) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (285459) FIRE_ALARM: [0m
+[0;32mI (288469) FIRE_ALARM: [0m
+[0;32mI (288469) FIRE_ALARM: ━━━━━━━━━━ Reading #52 ━━━━━━━━━━[0m
+[0;32mI (288469) FIRE_ALARM: [0m
+[0;32mI (288469) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (288469) FIRE_ALARM:      PPM Value    : 70[0m
+[0;32mI (288479) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (288479) FIRE_ALARM: [0m
+[0;32mI (288479) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (288489) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (288489) FIRE_ALARM:      Voltage      : 3.90V[0m
+[0;32mI (288489) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (288499) FIRE_ALARM: [0m
+[0;32mI (288499) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (288509) FIRE_ALARM: [0m
+[0;32mI (291519) FIRE_ALARM: [0m
+[0;32mI (291519) FIRE_ALARM: ━━━━━━━━━━ Reading #53 ━━━━━━━━━━[0m
+[0;32mI (291519) FIRE_ALARM: [0m
+[0;32mI (291519) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (291519) FIRE_ALARM:      PPM Value    : 74[0m
+[0;32mI (291529) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (291529) FIRE_ALARM: [0m
+[0;32mI (291529) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (291539) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (291539) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (291539) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (291549) FIRE_ALARM: [0m
+[0;32mI (291549) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (291559) FIRE_ALARM: [0m
+[0;32mI (294569) FIRE_ALARM: [0m
+[0;32mI (294569) FIRE_ALARM: ━━━━━━━━━━ Reading #54 ━━━━━━━━━━[0m
+[0;32mI (294569) FIRE_ALARM: [0m
+[0;32mI (294569) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (294569) FIRE_ALARM:      PPM Value    : 114[0m
+[0;32mI (294579) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (294579) FIRE_ALARM: [0m
+[0;32mI (294579) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (294589) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (294589) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (294589) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (294599) FIRE_ALARM: [0m
+[0;32mI (294599) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (294609) FIRE_ALARM: [0m
+[0;32mI (297619) FIRE_ALARM: [0m
+[0;32mI (297619) FIRE_ALARM: ━━━━━━━━━━ Reading #55 ━━━━━━━━━━[0m
+[0;32mI (297619) FIRE_ALARM: [0m
+[0;32mI (297619) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (297619) FIRE_ALARM:      PPM Value    : 75[0m
+[0;32mI (297629) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (297629) FIRE_ALARM: [0m
+[0;32mI (297629) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (297639) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (297639) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (297639) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (297649) FIRE_ALARM: [0m
+[0;32mI (297649) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (297659) FIRE_ALARM: [0m
+[0;32mI (300669) FIRE_ALARM: [0m
+[0;32mI (300669) FIRE_ALARM: ━━━━━━━━━━ Reading #56 ━━━━━━━━━━[0m
+[0;32mI (300669) FIRE_ALARM: [0m
+[0;32mI (300669) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (300669) FIRE_ALARM:      PPM Value    : 28[0m
+[0;32mI (300679) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (300679) FIRE_ALARM: [0m
+[0;32mI (300679) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (300689) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (300689) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (300689) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (300699) FIRE_ALARM: [0m
+[0;32mI (300699) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (300709) FIRE_ALARM: [0m
+[0;32mI (303719) FIRE_ALARM: [0m
+[0;32mI (303719) FIRE_ALARM: ━━━━━━━━━━ Reading #57 ━━━━━━━━━━[0m
+[0;32mI (303719) FIRE_ALARM: [0m
+[0;32mI (303719) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (303719) FIRE_ALARM:      PPM Value    : 98[0m
+[0;32mI (303729) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (303729) FIRE_ALARM: [0m
+[0;32mI (303729) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (303739) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (303739) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (303739) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (303749) FIRE_ALARM: [0m
+[0;32mI (303749) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (303759) FIRE_ALARM: [0m
+[0;32mI (306769) FIRE_ALARM: [0m
+[0;32mI (306769) FIRE_ALARM: ━━━━━━━━━━ Reading #58 ━━━━━━━━━━[0m
+[0;32mI (306769) FIRE_ALARM: [0m
+[0;32mI (306769) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (306769) FIRE_ALARM:      PPM Value    : 76[0m
+[0;32mI (306779) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (306779) FIRE_ALARM: [0m
+[0;32mI (306779) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (306789) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (306789) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (306789) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (306799) FIRE_ALARM: [0m
+[0;32mI (306799) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (306809) FIRE_ALARM: [0m
+[0;32mI (309819) FIRE_ALARM: [0m
+[0;32mI (309819) FIRE_ALARM: ━━━━━━━━━━ Reading #59 ━━━━━━━━━━[0m
+[0;32mI (309819) FIRE_ALARM: [0m
+[0;32mI (309819) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (309819) FIRE_ALARM:      PPM Value    : 49[0m
+[0;32mI (309829) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (309829) FIRE_ALARM: [0m
+[0;32mI (309829) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (309839) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (309839) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (309839) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (309849) FIRE_ALARM: [0m
+[0;32mI (309849) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (309859) FIRE_ALARM: [0m
+[0;32mI (312869) FIRE_ALARM: [0m
+[0;32mI (312869) FIRE_ALARM: ━━━━━━━━━━ Reading #60 ━━━━━━━━━━[0m
+[0;32mI (312869) FIRE_ALARM: [0m
+[0;32mI (312869) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (312869) FIRE_ALARM:      PPM Value    : 95[0m
+[0;32mI (312879) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (312879) FIRE_ALARM: [0m
+[0;32mI (312879) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (312889) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (312889) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (312889) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (312899) FIRE_ALARM: [0m
+[0;32mI (312899) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (312909) FIRE_ALARM: [0m
+[0;32mI (315919) FIRE_ALARM: [0m
+[0;32mI (315919) FIRE_ALARM: ━━━━━━━━━━ Reading #61 ━━━━━━━━━━[0m
+[0;32mI (315919) FIRE_ALARM: [0m
+[0;32mI (315919) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (315919) FIRE_ALARM:      PPM Value    : 106[0m
+[0;32mI (315929) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (315929) FIRE_ALARM: [0m
+[0;32mI (315929) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (315939) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (315939) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (315939) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (315949) FIRE_ALARM: [0m
+[0;32mI (315949) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (315959) FIRE_ALARM: [0m
+[0;32mI (318969) FIRE_ALARM: [0m
+[0;32mI (318969) FIRE_ALARM: ━━━━━━━━━━ Reading #62 ━━━━━━━━━━[0m
+[0;32mI (318969) FIRE_ALARM: [0m
+[0;32mI (318969) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (318969) FIRE_ALARM:      PPM Value    : 105[0m
+[0;32mI (318979) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (318979) FIRE_ALARM: [0m
+[0;32mI (318979) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (318989) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (318989) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (318989) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (318999) FIRE_ALARM: [0m
+[0;32mI (318999) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (319009) FIRE_ALARM: [0m
+[0;32mI (322019) FIRE_ALARM: [0m
+[0;32mI (322019) FIRE_ALARM: ━━━━━━━━━━ Reading #63 ━━━━━━━━━━[0m
+[0;32mI (322019) FIRE_ALARM: [0m
+[0;32mI (322019) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (322019) FIRE_ALARM:      PPM Value    : 51[0m
+[0;32mI (322029) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (322029) FIRE_ALARM: [0m
+[0;32mI (322029) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (322039) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (322039) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (322039) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (322049) FIRE_ALARM: [0m
+[0;32mI (322049) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (322059) FIRE_ALARM: [0m
+[0;32mI (325069) FIRE_ALARM: [0m
+[0;32mI (325069) FIRE_ALARM: ━━━━━━━━━━ Reading #64 ━━━━━━━━━━[0m
+[0;32mI (325069) FIRE_ALARM: [0m
+[0;32mI (325069) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (325069) FIRE_ALARM:      PPM Value    : 74[0m
+[0;32mI (325079) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (325079) FIRE_ALARM: [0m
+[0;32mI (325079) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (325089) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (325089) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (325089) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (325099) FIRE_ALARM: [0m
+[0;32mI (325099) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (325109) FIRE_ALARM: [0m
+[0;32mI (328119) FIRE_ALARM: [0m
+[0;32mI (328119) FIRE_ALARM: ━━━━━━━━━━ Reading #65 ━━━━━━━━━━[0m
+[0;32mI (328119) FIRE_ALARM: [0m
+[0;32mI (328119) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (328119) FIRE_ALARM:      PPM Value    : 78[0m
+[0;32mI (328129) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (328129) FIRE_ALARM: [0m
+[0;32mI (328129) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (328139) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (328139) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (328139) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (328149) FIRE_ALARM: [0m
+[0;32mI (328149) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (328159) FIRE_ALARM: [0m
+[0;32mI (331169) FIRE_ALARM: [0m
+[0;32mI (331169) FIRE_ALARM: ━━━━━━━━━━ Reading #66 ━━━━━━━━━━[0m
+[0;32mI (331169) FIRE_ALARM: [0m
+[0;32mI (331169) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (331169) FIRE_ALARM:      PPM Value    : 83[0m
+[0;32mI (331179) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (331179) FIRE_ALARM: [0m
+[0;32mI (331179) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (331189) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (331189) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (331189) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (331199) FIRE_ALARM: [0m
+[0;32mI (331199) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (331209) FIRE_ALARM: [0m
+[0;32mI (334219) FIRE_ALARM: [0m
+[0;32mI (334219) FIRE_ALARM: ━━━━━━━━━━ Reading #67 ━━━━━━━━━━[0m
+[0;32mI (334219) FIRE_ALARM: [0m
+[0;32mI (334219) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (334219) FIRE_ALARM:      PPM Value    : 93[0m
+[0;32mI (334229) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (334229) FIRE_ALARM: [0m
+[0;32mI (334229) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (334239) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (334239) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (334239) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (334249) FIRE_ALARM: [0m
+[0;32mI (334249) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (334259) FIRE_ALARM: [0m
+[0;32mI (337269) FIRE_ALARM: [0m
+[0;32mI (337269) FIRE_ALARM: ━━━━━━━━━━ Reading #68 ━━━━━━━━━━[0m
+[0;32mI (337269) FIRE_ALARM: [0m
+[0;32mI (337269) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (337269) FIRE_ALARM:      PPM Value    : 76[0m
+[0;32mI (337279) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (337279) FIRE_ALARM: [0m
+[0;32mI (337279) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (337289) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (337289) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (337289) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (337299) FIRE_ALARM: [0m
+[0;32mI (337299) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (337309) FIRE_ALARM: [0m
+[0;32mI (340319) FIRE_ALARM: [0m
+[0;32mI (340319) FIRE_ALARM: ━━━━━━━━━━ Reading #69 ━━━━━━━━━━[0m
+[0;32mI (340319) FIRE_ALARM: [0m
+[0;32mI (340319) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (340319) FIRE_ALARM:      PPM Value    : 76[0m
+[0;32mI (340329) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (340329) FIRE_ALARM: [0m
+[0;32mI (340329) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (340339) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (340339) FIRE_ALARM:      Voltage      : 3.88V[0m
+[0;32mI (340339) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (340349) FIRE_ALARM: [0m
+[0;32mI (340349) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (340359) FIRE_ALARM: [0m
+[0;32mI (343369) FIRE_ALARM: [0m
+[0;32mI (343369) FIRE_ALARM: ━━━━━━━━━━ Reading #70 ━━━━━━━━━━[0m
+[0;32mI (343369) FIRE_ALARM: [0m
+[0;32mI (343369) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (343369) FIRE_ALARM:      PPM Value    : 93[0m
+[0;32mI (343379) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (343379) FIRE_ALARM: [0m
+[0;32mI (343379) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (343389) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (343389) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (343389) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (343399) FIRE_ALARM: [0m
+[0;32mI (343399) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (343409) FIRE_ALARM: [0m
+[0;32mI (346419) FIRE_ALARM: [0m
+[0;32mI (346419) FIRE_ALARM: ━━━━━━━━━━ Reading #71 ━━━━━━━━━━[0m
+[0;32mI (346419) FIRE_ALARM: [0m
+[0;32mI (346419) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (346419) FIRE_ALARM:      PPM Value    : 94[0m
+[0;32mI (346429) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (346429) FIRE_ALARM: [0m
+[0;32mI (346429) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (346439) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (346439) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (346439) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (346449) FIRE_ALARM: [0m
+[0;32mI (346449) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (346459) FIRE_ALARM: [0m
+[0;32mI (349469) FIRE_ALARM: [0m
+[0;32mI (349469) FIRE_ALARM: ━━━━━━━━━━ Reading #72 ━━━━━━━━━━[0m
+[0;32mI (349469) FIRE_ALARM: [0m
+[0;32mI (349469) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (349469) FIRE_ALARM:      PPM Value    : 49[0m
+[0;32mI (349479) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (349479) FIRE_ALARM: [0m
+[0;32mI (349479) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (349489) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (349489) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (349489) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (349499) FIRE_ALARM: [0m
+[0;32mI (349499) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (349509) FIRE_ALARM: [0m
+[0;32mI (352519) FIRE_ALARM: [0m
+[0;32mI (352519) FIRE_ALARM: ━━━━━━━━━━ Reading #73 ━━━━━━━━━━[0m
+[0;32mI (352519) FIRE_ALARM: [0m
+[0;32mI (352519) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (352519) FIRE_ALARM:      PPM Value    : 53[0m
+[0;32mI (352529) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (352529) FIRE_ALARM: [0m
+[0;32mI (352529) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (352539) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (352539) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (352539) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (352549) FIRE_ALARM: [0m
+[0;32mI (352549) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (352559) FIRE_ALARM: [0m
+[0;32mI (355569) FIRE_ALARM: [0m
+[0;32mI (355569) FIRE_ALARM: ━━━━━━━━━━ Reading #74 ━━━━━━━━━━[0m
+[0;32mI (355569) FIRE_ALARM: [0m
+[0;32mI (355569) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (355569) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (355579) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (355579) FIRE_ALARM: [0m
+[0;32mI (355579) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (355589) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (355589) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (355589) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (355599) FIRE_ALARM: [0m
+[0;32mI (355599) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (355609) FIRE_ALARM: [0m
+[0;33mW (355609) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (355619) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (358629) FIRE_ALARM: [0m
+[0;32mI (358629) FIRE_ALARM: ━━━━━━━━━━ Reading #75 ━━━━━━━━━━[0m
+[0;32mI (358629) FIRE_ALARM: [0m
+[0;32mI (358629) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (358629) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (358639) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (358639) FIRE_ALARM: [0m
+[0;32mI (358639) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (358649) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (358649) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (358649) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (358659) FIRE_ALARM: [0m
+[0;32mI (358659) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (358669) FIRE_ALARM: [0m
+[0;33mW (358669) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (358679) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (361689) FIRE_ALARM: [0m
+[0;32mI (361689) FIRE_ALARM: ━━━━━━━━━━ Reading #76 ━━━━━━━━━━[0m
+[0;32mI (361689) FIRE_ALARM: [0m
+[0;32mI (361689) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (361689) FIRE_ALARM:      PPM Value    : 54[0m
+[0;32mI (361699) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (361699) FIRE_ALARM: [0m
+[0;32mI (361699) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (361709) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (361709) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (361709) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (361719) FIRE_ALARM: [0m
+[0;32mI (361719) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (361729) FIRE_ALARM: [0m
+[0;32mI (364739) FIRE_ALARM: [0m
+[0;32mI (364739) FIRE_ALARM: ━━━━━━━━━━ Reading #77 ━━━━━━━━━━[0m
+[0;32mI (364739) FIRE_ALARM: [0m
+[0;32mI (364739) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (364739) FIRE_ALARM:      PPM Value    : 151[0m
+[0;32mI (364749) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (364749) FIRE_ALARM: [0m
+[0;32mI (364749) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (364759) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (364759) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (364759) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (364769) FIRE_ALARM: [0m
+[0;32mI (364769) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (364779) FIRE_ALARM: [0m
+[0;32mI (367789) FIRE_ALARM: [0m
+[0;32mI (367789) FIRE_ALARM: ━━━━━━━━━━ Reading #78 ━━━━━━━━━━[0m
+[0;32mI (367789) FIRE_ALARM: [0m
+[0;32mI (367789) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (367789) FIRE_ALARM:      PPM Value    : 243[0m
+[0;32mI (367799) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (367799) FIRE_ALARM: [0m
+[0;32mI (367799) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (367809) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (367809) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (367809) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (367819) FIRE_ALARM: [0m
+[0;32mI (367819) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (367829) FIRE_ALARM: [0m
+[0;32mI (370839) FIRE_ALARM: [0m
+[0;32mI (370839) FIRE_ALARM: ━━━━━━━━━━ Reading #79 ━━━━━━━━━━[0m
+[0;32mI (370839) FIRE_ALARM: [0m
+[0;32mI (370839) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (370839) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (370849) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (370849) FIRE_ALARM: [0m
+[0;32mI (370849) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (370859) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (370859) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (370859) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (370869) FIRE_ALARM: [0m
+[0;32mI (370869) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (370879) FIRE_ALARM: [0m
+[0;33mW (370879) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (370889) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (373899) FIRE_ALARM: [0m
+[0;32mI (373899) FIRE_ALARM: ━━━━━━━━━━ Reading #80 ━━━━━━━━━━[0m
+[0;32mI (373899) FIRE_ALARM: [0m
+[0;32mI (373899) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (373899) FIRE_ALARM:      PPM Value    : 21[0m
+[0;32mI (373909) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (373909) FIRE_ALARM: [0m
+[0;32mI (373909) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (373919) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (373919) FIRE_ALARM:      Voltage      : 1.79V[0m
+[0;32mI (373919) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (373929) FIRE_ALARM: [0m
+[0;32mI (373929) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (373939) FIRE_ALARM: [0m
+[0;33mW (373939) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (373949) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (376959) FIRE_ALARM: [0m
+[0;32mI (376959) FIRE_ALARM: ━━━━━━━━━━ Reading #81 ━━━━━━━━━━[0m
+[0;32mI (376959) FIRE_ALARM: [0m
+[0;32mI (376959) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (376959) FIRE_ALARM:      PPM Value    : 49[0m
+[0;32mI (376969) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (376969) FIRE_ALARM: [0m
+[0;32mI (376969) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (376979) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (376979) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (376979) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (376989) FIRE_ALARM: [0m
+[0;32mI (376989) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (376999) FIRE_ALARM: [0m
+[0;32mI (380009) FIRE_ALARM: [0m
+[0;32mI (380009) FIRE_ALARM: ━━━━━━━━━━ Reading #82 ━━━━━━━━━━[0m
+[0;32mI (380009) FIRE_ALARM: [0m
+[0;32mI (380009) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (380009) FIRE_ALARM:      PPM Value    : 69[0m
+[0;32mI (380019) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (380019) FIRE_ALARM: [0m
+[0;32mI (380019) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (380029) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (380029) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (380029) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (380039) FIRE_ALARM: [0m
+[0;32mI (380039) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (380049) FIRE_ALARM: [0m
+[0;32mI (383059) FIRE_ALARM: [0m
+[0;32mI (383059) FIRE_ALARM: ━━━━━━━━━━ Reading #83 ━━━━━━━━━━[0m
+[0;32mI (383059) FIRE_ALARM: [0m
+[0;32mI (383059) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (383059) FIRE_ALARM:      PPM Value    : 4[0m
+[0;32mI (383069) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (383069) FIRE_ALARM: [0m
+[0;32mI (383069) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (383079) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (383079) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (383079) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (383089) FIRE_ALARM: [0m
+[0;32mI (383089) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (383099) FIRE_ALARM: [0m
+[0;32mI (386109) FIRE_ALARM: [0m
+[0;32mI (386109) FIRE_ALARM: ━━━━━━━━━━ Reading #84 ━━━━━━━━━━[0m
+[0;32mI (386109) FIRE_ALARM: [0m
+[0;32mI (386109) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (386109) FIRE_ALARM:      PPM Value    : 4[0m
+[0;32mI (386119) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (386119) FIRE_ALARM: [0m
+[0;32mI (386119) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (386129) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (386129) FIRE_ALARM:      Voltage      : 3.90V[0m
+[0;32mI (386129) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (386139) FIRE_ALARM: [0m
+[0;32mI (386139) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (386149) FIRE_ALARM: [0m
+[0;32mI (389159) FIRE_ALARM: [0m
+[0;32mI (389159) FIRE_ALARM: ━━━━━━━━━━ Reading #85 ━━━━━━━━━━[0m
+[0;32mI (389159) FIRE_ALARM: [0m
+[0;32mI (389159) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (389159) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (389169) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (389169) FIRE_ALARM: [0m
+[0;32mI (389169) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (389179) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (389179) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (389179) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (389189) FIRE_ALARM: [0m
+[0;32mI (389189) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (389199) FIRE_ALARM: [0m
+[0;33mW (389199) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (389209) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (392219) FIRE_ALARM: [0m
+[0;32mI (392219) FIRE_ALARM: ━━━━━━━━━━ Reading #86 ━━━━━━━━━━[0m
+[0;32mI (392219) FIRE_ALARM: [0m
+[0;32mI (392219) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (392219) FIRE_ALARM:      PPM Value    : 92[0m
+[0;32mI (392229) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (392229) FIRE_ALARM: [0m
+[0;32mI (392229) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (392239) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (392239) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (392239) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (392249) FIRE_ALARM: [0m
+[0;32mI (392249) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (392259) FIRE_ALARM: [0m
+[0;32mI (395269) FIRE_ALARM: [0m
+[0;32mI (395269) FIRE_ALARM: ━━━━━━━━━━ Reading #87 ━━━━━━━━━━[0m
+[0;32mI (395269) FIRE_ALARM: [0m
+[0;32mI (395269) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (395269) FIRE_ALARM:      PPM Value    : 54[0m
+[0;32mI (395279) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (395279) FIRE_ALARM: [0m
+[0;32mI (395279) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (395289) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (395289) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (395289) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (395299) FIRE_ALARM: [0m
+[0;32mI (395299) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (395309) FIRE_ALARM: [0m
+[0;32mI (398319) FIRE_ALARM: [0m
+[0;32mI (398319) FIRE_ALARM: ━━━━━━━━━━ Reading #88 ━━━━━━━━━━[0m
+[0;32mI (398319) FIRE_ALARM: [0m
+[0;32mI (398319) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (398319) FIRE_ALARM:      PPM Value    : 35[0m
+[0;32mI (398329) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (398329) FIRE_ALARM: [0m
+[0;32mI (398329) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (398339) FIRE_ALARM:      Percentage   : 73%[0m
+[0;32mI (398339) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (398339) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (398349) FIRE_ALARM: [0m
+[0;32mI (398349) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (398359) FIRE_ALARM: [0m
+[0;32mI (401369) FIRE_ALARM: [0m
+[0;32mI (401369) FIRE_ALARM: ━━━━━━━━━━ Reading #89 ━━━━━━━━━━[0m
+[0;32mI (401369) FIRE_ALARM: [0m
+[0;32mI (401369) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (401369) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (401379) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (401379) FIRE_ALARM: [0m
+[0;32mI (401379) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (401389) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (401389) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (401389) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (401399) FIRE_ALARM: [0m
+[0;32mI (401399) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (401409) FIRE_ALARM: [0m
+[0;33mW (401409) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (401419) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (404429) FIRE_ALARM: [0m
+[0;32mI (404429) FIRE_ALARM: ━━━━━━━━━━ Reading #90 ━━━━━━━━━━[0m
+[0;32mI (404429) FIRE_ALARM: [0m
+[0;32mI (404429) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (404429) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (404439) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (404439) FIRE_ALARM: [0m
+[0;32mI (404439) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (404449) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (404449) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (404449) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (404459) FIRE_ALARM: [0m
+[0;32mI (404459) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (404469) FIRE_ALARM: [0m
+[0;33mW (404469) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (404479) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (407489) FIRE_ALARM: [0m
+[0;32mI (407489) FIRE_ALARM: ━━━━━━━━━━ Reading #91 ━━━━━━━━━━[0m
+[0;32mI (407489) FIRE_ALARM: [0m
+[0;32mI (407489) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (407489) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (407499) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (407499) FIRE_ALARM: [0m
+[0;32mI (407499) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (407509) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (407509) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (407509) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (407519) FIRE_ALARM: [0m
+[0;32mI (407519) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (407529) FIRE_ALARM: [0m
+[0;33mW (407529) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (407539) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (410549) FIRE_ALARM: [0m
+[0;32mI (410549) FIRE_ALARM: ━━━━━━━━━━ Reading #92 ━━━━━━━━━━[0m
+[0;32mI (410549) FIRE_ALARM: [0m
+[0;32mI (410549) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (410549) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (410559) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (410559) FIRE_ALARM: [0m
+[0;32mI (410559) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (410569) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (410569) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (410569) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (410579) FIRE_ALARM: [0m
+[0;32mI (410579) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (410589) FIRE_ALARM: [0m
+[0;33mW (410589) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (410599) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (413609) FIRE_ALARM: [0m
+[0;32mI (413609) FIRE_ALARM: ━━━━━━━━━━ Reading #93 ━━━━━━━━━━[0m
+[0;32mI (413609) FIRE_ALARM: [0m
+[0;32mI (413609) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (413609) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (413619) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (413619) FIRE_ALARM: [0m
+[0;32mI (413619) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (413629) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (413629) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (413629) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (413639) FIRE_ALARM: [0m
+[0;32mI (413639) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (413649) FIRE_ALARM: [0m
+[0;33mW (413649) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (413659) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (416669) FIRE_ALARM: [0m
+[0;32mI (416669) FIRE_ALARM: ━━━━━━━━━━ Reading #94 ━━━━━━━━━━[0m
+[0;32mI (416669) FIRE_ALARM: [0m
+[0;32mI (416669) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (416669) FIRE_ALARM:      PPM Value    : 95[0m
+[0;32mI (416679) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (416679) FIRE_ALARM: [0m
+[0;32mI (416679) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (416689) FIRE_ALARM:      Percentage   : 74%[0m
+[0;32mI (416689) FIRE_ALARM:      Voltage      : 3.89V[0m
+[0;32mI (416689) FIRE_ALARM:      Status       : GOOD[0m
+[0;32mI (416699) FIRE_ALARM: [0m
+[0;32mI (416699) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (416709) FIRE_ALARM: [0m
+[0;32mI (419719) FIRE_ALARM: [0m
+[0;32mI (419719) FIRE_ALARM: ━━━━━━━━━━ Reading #95 ━━━━━━━━━━[0m
+[0;32mI (419719) FIRE_ALARM: [0m
+[0;32mI (419719) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (419719) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (419729) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (419729) FIRE_ALARM: [0m
+[0;32mI (419729) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (419739) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (419739) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (419739) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (419749) FIRE_ALARM: [0m
+[0;32mI (419749) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (419759) FIRE_ALARM: [0m
+[0;33mW (419759) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (419769) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (422779) FIRE_ALARM: [0m
+[0;32mI (422779) FIRE_ALARM: ━━━━━━━━━━ Reading #96 ━━━━━━━━━━[0m
+[0;32mI (422779) FIRE_ALARM: [0m
+[0;32mI (422779) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (422779) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (422789) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (422789) FIRE_ALARM: [0m
+[0;32mI (422789) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (422799) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (422799) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (422799) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (422809) FIRE_ALARM: [0m
+[0;32mI (422809) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (422819) FIRE_ALARM: [0m
+[0;33mW (422819) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (422829) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (425839) FIRE_ALARM: [0m
+[0;32mI (425839) FIRE_ALARM: ━━━━━━━━━━ Reading #97 ━━━━━━━━━━[0m
+[0;32mI (425839) FIRE_ALARM: [0m
+[0;32mI (425839) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (425839) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (425849) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (425849) FIRE_ALARM: [0m
+[0;32mI (425849) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (425859) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (425859) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (425859) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (425869) FIRE_ALARM: [0m
+[0;32mI (425869) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (425879) FIRE_ALARM: [0m
+[0;33mW (425879) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (425889) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (428899) FIRE_ALARM: [0m
+[0;32mI (428899) FIRE_ALARM: ━━━━━━━━━━ Reading #98 ━━━━━━━━━━[0m
+[0;32mI (428899) FIRE_ALARM: [0m
+[0;32mI (428899) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (428899) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (428909) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (428909) FIRE_ALARM: [0m
+[0;32mI (428909) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (428919) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (428919) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (428919) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (428929) FIRE_ALARM: [0m
+[0;32mI (428929) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (428939) FIRE_ALARM: [0m
+[0;33mW (428939) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (428949) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (431959) FIRE_ALARM: [0m
+[0;32mI (431959) FIRE_ALARM: ━━━━━━━━━━ Reading #99 ━━━━━━━━━━[0m
+[0;32mI (431959) FIRE_ALARM: [0m
+[0;32mI (431959) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (431959) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (431969) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (431969) FIRE_ALARM: [0m
+[0;32mI (431969) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (431979) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (431979) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (431979) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (431989) FIRE_ALARM: [0m
+[0;32mI (431989) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (431999) FIRE_ALARM: [0m
+[0;33mW (431999) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (432009) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (435019) FIRE_ALARM: [0m
+[0;32mI (435019) FIRE_ALARM: ━━━━━━━━━━ Reading #100 ━━━━━━━━━━[0m
+[0;32mI (435019) FIRE_ALARM: [0m
+[0;32mI (435019) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (435019) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (435029) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (435029) FIRE_ALARM: [0m
+[0;32mI (435029) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (435039) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (435039) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (435039) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (435049) FIRE_ALARM: [0m
+[0;32mI (435049) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (435059) FIRE_ALARM: [0m
+[0;33mW (435059) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (435069) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (438079) FIRE_ALARM: [0m
+[0;32mI (438079) FIRE_ALARM: ━━━━━━━━━━ Reading #101 ━━━━━━━━━━[0m
+[0;32mI (438079) FIRE_ALARM: [0m
+[0;32mI (438079) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (438079) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (438089) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (438089) FIRE_ALARM: [0m
+[0;32mI (438089) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (438099) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (438099) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (438099) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (438109) FIRE_ALARM: [0m
+[0;32mI (438109) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (438119) FIRE_ALARM: [0m
+[0;33mW (438119) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (438129) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (441139) FIRE_ALARM: [0m
+[0;32mI (441139) FIRE_ALARM: ━━━━━━━━━━ Reading #102 ━━━━━━━━━━[0m
+[0;32mI (441139) FIRE_ALARM: [0m
+[0;32mI (441139) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (441139) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (441149) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (441149) FIRE_ALARM: [0m
+[0;32mI (441149) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (441159) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (441159) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (441159) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (441169) FIRE_ALARM: [0m
+[0;32mI (441169) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (441179) FIRE_ALARM: [0m
+[0;33mW (441179) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (441189) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (444199) FIRE_ALARM: [0m
+[0;32mI (444199) FIRE_ALARM: ━━━━━━━━━━ Reading #103 ━━━━━━━━━━[0m
+[0;32mI (444199) FIRE_ALARM: [0m
+[0;32mI (444199) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (444199) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (444209) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (444209) FIRE_ALARM: [0m
+[0;32mI (444209) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (444219) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (444219) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (444219) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (444229) FIRE_ALARM: [0m
+[0;32mI (444229) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (444239) FIRE_ALARM: [0m
+[0;33mW (444239) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (444249) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (447259) FIRE_ALARM: [0m
+[0;32mI (447259) FIRE_ALARM: ━━━━━━━━━━ Reading #104 ━━━━━━━━━━[0m
+[0;32mI (447259) FIRE_ALARM: [0m
+[0;32mI (447259) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (447259) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (447269) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (447269) FIRE_ALARM: [0m
+[0;32mI (447269) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (447279) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (447279) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (447279) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (447289) FIRE_ALARM: [0m
+[0;32mI (447289) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (447299) FIRE_ALARM: [0m
+[0;33mW (447299) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (447309) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (450319) FIRE_ALARM: [0m
+[0;32mI (450319) FIRE_ALARM: ━━━━━━━━━━ Reading #105 ━━━━━━━━━━[0m
+[0;32mI (450319) FIRE_ALARM: [0m
+[0;32mI (450319) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (450319) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (450329) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (450329) FIRE_ALARM: [0m
+[0;32mI (450329) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (450339) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (450339) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (450339) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (450349) FIRE_ALARM: [0m
+[0;32mI (450349) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (450359) FIRE_ALARM: [0m
+[0;33mW (450359) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (450369) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (453379) FIRE_ALARM: [0m
+[0;32mI (453379) FIRE_ALARM: ━━━━━━━━━━ Reading #106 ━━━━━━━━━━[0m
+[0;32mI (453379) FIRE_ALARM: [0m
+[0;32mI (453379) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (453379) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (453389) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (453389) FIRE_ALARM: [0m
+[0;32mI (453389) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (453399) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (453399) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (453399) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (453409) FIRE_ALARM: [0m
+[0;32mI (453409) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (453419) FIRE_ALARM: [0m
+[0;33mW (453419) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (453429) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (456439) FIRE_ALARM: [0m
+[0;32mI (456439) FIRE_ALARM: ━━━━━━━━━━ Reading #107 ━━━━━━━━━━[0m
+[0;32mI (456439) FIRE_ALARM: [0m
+[0;32mI (456439) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (456439) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (456449) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (456449) FIRE_ALARM: [0m
+[0;32mI (456449) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (456459) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (456459) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (456459) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (456469) FIRE_ALARM: [0m
+[0;32mI (456469) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (456479) FIRE_ALARM: [0m
+[0;33mW (456479) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (456489) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (459499) FIRE_ALARM: [0m
+[0;32mI (459499) FIRE_ALARM: ━━━━━━━━━━ Reading #108 ━━━━━━━━━━[0m
+[0;32mI (459499) FIRE_ALARM: [0m
+[0;32mI (459499) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (459499) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (459509) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (459509) FIRE_ALARM: [0m
+[0;32mI (459509) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (459519) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (459519) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (459519) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (459529) FIRE_ALARM: [0m
+[0;32mI (459529) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (459539) FIRE_ALARM: [0m
+[0;33mW (459539) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (459549) FIRE_ALARM: Please recharge soon![0m
+[0;32mI (462559) FIRE_ALARM: [0m
+[0;32mI (462559) FIRE_ALARM: ━━━━━━━━━━ Reading #109 ━━━━━━━━━━[0m
+[0;32mI (462559) FIRE_ALARM: [0m
+[0;32mI (462559) FIRE_ALARM:   SMOKE SENSOR:[0m
+[0;32mI (462559) FIRE_ALARM:      PPM Value    : 2[0m
+[0;32mI (462569) FIRE_ALARM:      Status       : CLEAR[0m
+[0;32mI (462569) FIRE_ALARM: [0m
+[0;32mI (462569) FIRE_ALARM:   BATTERY:[0m
+[0;32mI (462579) FIRE_ALARM:      Percentage   : 0%[0m
+[0;32mI (462579) FIRE_ALARM:      Voltage      : 0.61V[0m
+[0;32mI (462579) FIRE_ALARM:      Status       : CRITICAL[0m
+[0;32mI (462589) FIRE_ALARM: [0m
+[0;32mI (462589) FIRE_ALARM: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32mI (462599) FIRE_ALARM: [0m
+[0;33mW (462599) FIRE_ALARM: LOW BATTERY WARNING![0m
+[0;33mW (462609) FIRE_ALARM: Please recharge soon![0m
